@@ -60,9 +60,17 @@ jobs:
     # Job steps
     steps:
       - uses: actions/checkout@v1
+      - id: cache-modules
+        uses: actions/cache@v1
+        with:
+          path: ./node_modules
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+      
       - name: Install dependencies
-        run: yarn
-        # 👇 Adds Chromatic as a step in the workflow
+        if: steps.cache-pipenv.outputs.cache-hit != 'true'
+        run: |
+          npm install
+
       - name: Publish to Chromatic
         uses: chromaui/action@v1
         # Chromatic GitHub Action options
