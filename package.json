@@ -5,8 +5,8 @@
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "scripts": {
-    "storybook": "start-storybook --no-manager-cache -p 6006 -s ./src/assets/images",
-    "build-storybook": "build-storybook -s ./src/assets/images",
+    "storybook": "start-storybook --no-manager-cache -p 6006 -s ./src/assets/images,./node_modules/@redlibre/assets/fonts",
+    "build-storybook": "build-storybook -s ./src/assets/images,./node_modules/@redlibre/assets/fonts",
     "vercel-build": "build-storybook --quiet -o public",
     "copy-css:cjs": "copyfiles -u 2 src/ui/**/*.scss dist/cjs",
     "copy-css:es": "copyfiles -u 2 src/ui/**/*.scss dist/es",
