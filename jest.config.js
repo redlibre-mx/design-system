@@ -8,10 +8,10 @@ module.exports = {
   cache           :false,
   // https://stackoverflow.com/questions/39418555/syntaxerror-with-jest-and-react-and-importing-css-files
   moduleNameMapper:{
-    '^.+\\.(css|scss)$'        :'<rootDir>/config/CSSStub.js',
-    '^.+\\.(mdx)$'             :'<rootDir>/config/CSSStub.js',
+    '^.+\\.(css|scss)$':'<rootDir>/config/CSSStub.js',
+    '^.+\\.(mdx)$'     :'<rootDir>/config/CSSStub.js',
     // https://jestjs.io/docs/webpack#mocking-css-modules
-    '^@pareto-engineering/bem$':'identity-obj-proxy',
+    '^@redlibre/bem$'  :'identity-obj-proxy',
   },
   transform:{
     '^.+\\.[tj]sx?$':'babel-jest',
