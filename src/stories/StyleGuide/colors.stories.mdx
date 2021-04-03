@@ -1,0 +1,85 @@
+import { Meta, ColorItem, ColorPalette } from '@storybook/addon-docs/blocks';
+
+import { 
+  brandMap, 
+  wheelMap, 
+  modalsMap, 
+  uiMap ,
+  smMap,
+  monochromeMap
+} from './helpers';
+
+<Meta title="StyleGuide/Colors" />
+
+# Colors
+
+The colors are defined in [@pareto-engineering/styles/src/swatch](https://github.com/HelloPareto/styles/tree/main/src/swatch) and make use of the open source library [@aztlan/swatch](https://github.com/AztlanEngineering/swatch).
+
+## Colorschemes
+
+Color are collections of colors that put together, make a UI theme.
+
+### Light
+
+<!---
+ <ColorPalette>
+   { brandMap.map((e,i) =>
+     <ColorItem
+       key={i}
+       { ...e }
+     />
+   ) }
+ </ColorPalette>
+ -->
+ <ColorPalette>
+   {
+     wheelMap.map((e,i) =>
+       <ColorItem
+         key={i}
+         { ...e }
+       />
+     ) }
+ </ColorPalette>
+ <ColorPalette>
+   { modalsMap.map((e,i) =>
+     <ColorItem
+       key={i}
+       { ...e }
+     />
+   ) }
+ </ColorPalette>
+ <ColorPalette>
+   { uiMap.map((e,i) =>
+     <ColorItem
+       key={i}
+       { ...e }
+     />
+   ) }
+ </ColorPalette>
+
+
+## Palettes
+
+Palettes are collections of colors that are independent of colorschemes. 
+
+### Monochrome
+
+ <ColorPalette>
+   { monochromeMap.map((e,i) =>
+     <ColorItem
+       key={i}
+       { ...e }
+     />
+   ) }
+ </ColorPalette>
+
+### Social Media
+
+ <ColorPalette>
+   { smMap.map((e,i) =>
+     <ColorItem
+       key={i}
+       { ...e }
+     />
+   ) }
+ </ColorPalette>

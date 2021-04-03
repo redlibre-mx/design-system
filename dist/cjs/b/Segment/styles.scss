@@ -1,0 +1,26 @@
+/* @pareto-engineering/generator-front 0.2.4 */
+
+@use "@pareto-engineering/bem" ;
+$padding:.5em 1em;
+
+.#{bem.$base}.segment {
+  border: var(--theme-border);
+  border-radius: var(--border-radius);
+
+  .title {
+    font-weight: 600;
+    margin: unset;
+  }
+
+  > header,
+  > main,
+  > footer {
+    padding: $padding;
+  }
+
+  > footer {
+    border-top: var(--theme-border);
+  }
+}
+
+

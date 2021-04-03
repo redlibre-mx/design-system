@@ -1,0 +1,12 @@
+/* @pareto-engineering/generator-front 0.2.4 */
+
+@use "@pareto-engineering/bem" ;
+$padding:.5em 1em;
+
+.#{bem.$base}.card {
+  border: var(--theme-border);
+  border-radius: var(--border-radius);
+  padding: $padding;
+}
+
+

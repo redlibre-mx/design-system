@@ -1,0 +1,64 @@
+name: (pr) Test
+
+on:
+  push:
+    branches-ignore:
+      - development
+      - staging
+      - production
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        #node-version: [12.x, 14.x]
+        node-version: [14.x]
+
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    #- run: npm ci
+    - run: npm i
+    #- run: npm run build --if-present
+    #- name: Test
+    #  env:
+    #    CI: true
+    #    #run: npm run test
+
+    - name: Lint SCSS
+      run: npm run test:stylelint
+
+    - name: Test with Storyshots (Take Snapshots -> Compare)
+      run: npm run test:jest
+
+    - name: Test with Eslint
+      run: npm run test:eslint
+
+    #- name: Test with TSC
+    #  run: npm run test:tsc
+  
+  chromatic-deployment:
+    needs: test
+    # Operating System
+    runs-on: ubuntu-latest
+    # Job steps
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install dependencies
+        run: yarn
+        # 👇 Adds Chromatic as a step in the workflow
+      - name: Publish to Chromatic
+        uses: chromaui/action@v1
+        # Chromatic GitHub Action options
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # 👇 Chromatic projectToken, refer to the manage page to obtain it.
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          exitZeroOnChanges: true # 👈 Option to prevent the workflow from failing, in case there are changes (but no errors)

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "\n\n** PRE-COMMIT => Running tests"
+#npm run test
+

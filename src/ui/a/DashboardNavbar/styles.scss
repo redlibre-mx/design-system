@@ -1,0 +1,14 @@
+/* @pareto-engineering/generator-front 0.2.3 */
+
+.dashboard-navbar {
+  background: var(--pearl);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .menu {
+    flex-grow: 1;
+  }
+}
+
+

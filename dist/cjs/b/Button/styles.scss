@@ -1,0 +1,45 @@
+/* @pareto-engineering/generator-front 0.2.4 */
+
+@use "@pareto-engineering/bem";
+
+$padding: .6em .6em .48em;
+$default-color:primary;
+$font-weight:bold;
+
+.#{bem.$base}.button {
+  background: var(--x, var(--#{$default-color}));
+  border: transparent;
+  border-radius: var(--border-radius);
+  color: var(--on-x, var(--on-#{$default-color}));
+  font-weight: 600;
+  padding: $padding;
+
+  &:not(:disabled) {
+    cursor: pointer;
+
+    &:hover {
+      background: var(--light-x, var(--light-#{$default-color}));
+    }
+  }
+
+
+  &.#{bem.$modifier-ghost} {
+    background: transparent;
+    border: 1px solid var(--x, var(--#{$default-color}));
+    color: var(--x, var(--#{$default-color}));
+
+    &:not(:disabled) {
+      &:hover {
+        background: var(--x, var(--#{$default-color}));
+        border: 1px solid transparent;
+        color: var(--on-x, var(--on-#{$default-color}));
+      }
+    }
+  }
+
+  &:disabled {
+    //text-decoration: line-through;
+  }
+}
+
+

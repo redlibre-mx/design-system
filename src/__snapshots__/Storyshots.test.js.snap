@@ -1,0 +1,914 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots a/DashboardNavbar Base 1`] = `
+<div
+  className="dashboard-navbar"
+>
+  <section
+    className="menu"
+  >
+    <div
+      className="nav-item"
+    >
+      Nav Item
+      Home
+    </div>
+    <div
+      className="nav-item"
+    >
+      Nav Item
+      Tasks
+    </div>
+    <div
+      className="nav-item"
+    >
+      Nav Item
+      Profile
+    </div>
+  </section>
+  <div
+    className="nav-profile"
+  >
+    Nav Profile
+  </div>
+</div>
+`;
+
+exports[`Storyshots a/SiteContext Base 1`] = `"Sample SiteContext"`;
+
+exports[`Storyshots b/Button Base 1`] = `
+<button
+  className="base button"
+  type="button"
+>
+  Sample Button
+</button>
+`;
+
+exports[`Storyshots b/Button Colors 1`] = `
+Array [
+  <button
+    className="base button x-primary"
+    type="button"
+  >
+    This is a
+     
+    primary
+     
+    button
+  </button>,
+  <button
+    className="base button x-accent1"
+    type="button"
+  >
+    This is a
+     
+    accent1
+     
+    button
+  </button>,
+  <button
+    className="base button x-accent2"
+    type="button"
+  >
+    This is a
+     
+    accent2
+     
+    button
+  </button>,
+  <button
+    className="base button x-accent3"
+    type="button"
+  >
+    This is a
+     
+    accent3
+     
+    button
+  </button>,
+  <button
+    className="base button x-accent4"
+    type="button"
+  >
+    This is a
+     
+    accent4
+     
+    button
+  </button>,
+  <button
+    className="base button x-success"
+    type="button"
+  >
+    This is a
+     
+    success
+     
+    button
+  </button>,
+  <button
+    className="base button x-warning"
+    type="button"
+  >
+    This is a
+     
+    warning
+     
+    button
+  </button>,
+  <button
+    className="base button x-error"
+    type="button"
+  >
+    This is a
+     
+    error
+     
+    button
+  </button>,
+  <button
+    className="base button x-red"
+    type="button"
+  >
+    This is a
+     
+    red
+     
+    button
+  </button>,
+  <button
+    className="base button x-orange"
+    type="button"
+  >
+    This is a
+     
+    orange
+     
+    button
+  </button>,
+  <button
+    className="base button x-yellow"
+    type="button"
+  >
+    This is a
+     
+    yellow
+     
+    button
+  </button>,
+  <button
+    className="base button x-olive"
+    type="button"
+  >
+    This is a
+     
+    olive
+     
+    button
+  </button>,
+  <button
+    className="base button x-green"
+    type="button"
+  >
+    This is a
+     
+    green
+     
+    button
+  </button>,
+  <button
+    className="base button x-indigo"
+    type="button"
+  >
+    This is a
+     
+    indigo
+     
+    button
+  </button>,
+  <button
+    className="base button x-azure"
+    type="button"
+  >
+    This is a
+     
+    azure
+     
+    button
+  </button>,
+  <button
+    className="base button x-blue"
+    type="button"
+  >
+    This is a
+     
+    blue
+     
+    button
+  </button>,
+  <button
+    className="base button x-violet"
+    type="button"
+  >
+    This is a
+     
+    violet
+     
+    button
+  </button>,
+  <button
+    className="base button x-pink"
+    type="button"
+  >
+    This is a
+     
+    pink
+     
+    button
+  </button>,
+  <button
+    className="base button x-background"
+    type="button"
+  >
+    This is a
+     
+    background
+     
+    button
+  </button>,
+  <button
+    className="base button x-heading"
+    type="button"
+  >
+    This is a
+     
+    heading
+     
+    button
+  </button>,
+  <button
+    className="base button x-paragraph"
+    type="button"
+  >
+    This is a
+     
+    paragraph
+     
+    button
+  </button>,
+  <button
+    className="base button x-subtitle"
+    type="button"
+  >
+    This is a
+     
+    subtitle
+     
+    button
+  </button>,
+  <button
+    className="base button x-metadata"
+    type="button"
+  >
+    This is a
+     
+    metadata
+     
+    button
+  </button>,
+  <button
+    className="base button x-link"
+    type="button"
+  >
+    This is a
+     
+    link
+     
+    button
+  </button>,
+  <button
+    className="base button x-navlink"
+    type="button"
+  >
+    This is a
+     
+    navlink
+     
+    button
+  </button>,
+  <button
+    className="base button x-twitter"
+    type="button"
+  >
+    This is a
+     
+    twitter
+     
+    button
+  </button>,
+  <button
+    className="base button x-facebook"
+    type="button"
+  >
+    This is a
+     
+    facebook
+     
+    button
+  </button>,
+  <button
+    className="base button x-instagram"
+    type="button"
+  >
+    This is a
+     
+    instagram
+     
+    button
+  </button>,
+  <button
+    className="base button x-google"
+    type="button"
+  >
+    This is a
+     
+    google
+     
+    button
+  </button>,
+  <button
+    className="base button x-black"
+    type="button"
+  >
+    This is a
+     
+    black
+     
+    button
+  </button>,
+  <button
+    className="base button x-anchor"
+    type="button"
+  >
+    This is a
+     
+    anchor
+     
+    button
+  </button>,
+  <button
+    className="base button x-grey"
+    type="button"
+  >
+    This is a
+     
+    grey
+     
+    button
+  </button>,
+  <button
+    className="base button x-pearl"
+    type="button"
+  >
+    This is a
+     
+    pearl
+     
+    button
+  </button>,
+  <button
+    className="base button x-white"
+    type="button"
+  >
+    This is a
+     
+    white
+     
+    button
+  </button>,
+]
+`;
+
+exports[`Storyshots b/Button Disabled 1`] = `
+<button
+  className="base button"
+  disabled={true}
+  type="button"
+>
+  Sample Button
+</button>
+`;
+
+exports[`Storyshots b/Button Ghost 1`] = `
+<button
+  className="base button modifierGhost"
+  type="button"
+>
+  Sample Button
+</button>
+`;
+
+exports[`Storyshots b/Card Base 1`] = `
+<div
+  className="base card"
+>
+  Sample Card
+</div>
+`;
+
+exports[`Storyshots b/Card Ghost Group 1`] = `
+<div
+  className="base card-group modifierGhost"
+>
+  <div
+    className="base card"
+  >
+    Card1
+  </div>
+  <div
+    className="base card"
+  >
+    Card2
+  </div>
+  <div
+    className="base card"
+  >
+    Card3
+  </div>
+</div>
+`;
+
+exports[`Storyshots b/Card Group 1`] = `
+<div
+  className="base card-group"
+>
+  <div
+    className="base card"
+  >
+    Card1
+  </div>
+  <div
+    className="base card"
+  >
+    Card2
+  </div>
+  <div
+    className="base card"
+  >
+    Card3
+  </div>
+</div>
+`;
+
+exports[`Storyshots b/Page Base 1`] = `
+<main
+  className="base page"
+  id="default"
+>
+  Inspect source for details.
+</main>
+`;
+
+exports[`Storyshots b/Page Item Type 1`] = `
+<main
+  className="base page"
+  id="itemtype"
+  itemScope=" "
+  itemType="https://schema.org/Movie"
+>
+  <meta
+    content="https://mysite.com/movie"
+    itemProp="mainEntityOfPage"
+  />
+  Inspect source for details. Please note that when itemType is provided,
+   
+  <code>
+    helmetProps.canonical
+  </code>
+   
+  needs to be provided as well.
+</main>
+`;
+
+exports[`Storyshots b/Page With Sections 1`] = `
+<main
+  className="base page"
+  id="with-sections"
+>
+  <section
+    className="base section"
+    id="with-sections_s1"
+  >
+    Section 1
+  </section>
+  <section
+    className="base section"
+    id="with-sections_s2"
+  >
+    Section 2. Inspect source for details.
+  </section>
+</main>
+`;
+
+exports[`Storyshots b/QuestionDropdown Base 1`] = `
+<div
+  className="base question-dropdown"
+>
+  <button
+    className="accordion"
+    isGhost={true}
+    onClick={[Function]}
+    type="button"
+  >
+    <span
+      className="caret"
+    >
+      ^
+    </span>
+    <div
+      className="question-content"
+    >
+      What is Pareto?
+    </div>
+  </button>
+  <div
+    className="answer-content"
+  >
+    <div
+      className="answer-text"
+    >
+      <p>
+        Pareto is a female-owned and operated virtual workforce helping startups and small businesses automate day-to-day data processing, sales outreach, product research, and admin operations. We combine the quality and care of real people with the efficiency of machine automation to get the job done.
+      </p>
+      <p>
+        At the same time, we’re a WBENC-certified business, empowering women in developing countries with meaningful economic opportunities.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots b/QuestionDropdown With SEO 1`] = `
+<div
+  className="base question-dropdown"
+  itemProp="mainEntity"
+  itemScope={true}
+  itemType="http://schema.org/Question"
+>
+  <button
+    className="accordion"
+    isGhost={true}
+    onClick={[Function]}
+    type="button"
+  >
+    <span
+      className="caret"
+    >
+      ^
+    </span>
+    <div
+      className="question-content"
+      itemProp="name"
+    >
+      What is Pareto?
+    </div>
+  </button>
+  <div
+    className="answer-content"
+    itemProp="acceptedAnswer"
+    itemType="https://schema.org/Answer"
+  >
+    <div
+      className="answer-text"
+      itemProp="text"
+    >
+      <p>
+        Pareto is a female-owned and operated virtual workforce helping startups and small businesses automate day-to-day data processing, sales outreach, product research, and admin operations. We combine the quality and care of real people with the efficiency of machine automation to get the job done.
+      </p>
+      <p>
+        At the same time, we’re a WBENC-certified business, empowering women in developing countries with meaningful economic opportunities.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots b/Segment Base 1`] = `
+<div
+  className="base segment"
+>
+  <header>
+    <p
+      className="s1 title"
+    >
+      Default title
+    </p>
+  </header>
+  <main>
+    Sample Segment
+  </main>
+</div>
+`;
+
+exports[`Storyshots b/Segment With Footer 1`] = `
+<div
+  className="base segment"
+>
+  <header>
+    <p
+      className="s1 title"
+    >
+      This is a segment with a footer
+    </p>
+  </header>
+  <main>
+    Sample Segment
+  </main>
+  <footer>
+    This should appear in the footer
+  </footer>
+</div>
+`;
+
+exports[`Storyshots b/Title Base 1`] = `
+<div
+  className="base title"
+>
+  <h1>
+    Test
+  </h1>
+</div>
+`;
+
+exports[`Storyshots b/Title Sizes 1`] = `
+Array [
+  <div
+    className="u2 pv-u"
+  >
+    <div
+      className="y-background b-dark-y"
+    >
+      <div
+        className="base title"
+      >
+        <h1>
+          This is a title in h1
+        </h1>
+        <p>
+          Here goes the subtitle
+        </p>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="u2 pv-u"
+  >
+    <div
+      className="y-background b-dark-y"
+    >
+      <div
+        className="base title"
+      >
+        <h2>
+          This is a title in h2
+        </h2>
+        <p>
+          Here goes the subtitle
+        </p>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="u2 pv-u"
+  >
+    <div
+      className="y-background b-dark-y"
+    >
+      <div
+        className="base title"
+      >
+        <h3>
+          This is a title in h3
+        </h3>
+        <p>
+          Here goes the subtitle
+        </p>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="u2 pv-u"
+  >
+    <div
+      className="y-background b-dark-y"
+    >
+      <div
+        className="base title"
+      >
+        <h4>
+          This is a title in h4
+        </h4>
+        <p>
+          Here goes the subtitle
+        </p>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="u2 pv-u"
+  >
+    <div
+      className="y-background b-dark-y"
+    >
+      <div
+        className="base title"
+      >
+        <h5>
+          This is a title in h5
+        </h5>
+        <p>
+          Here goes the subtitle
+        </p>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots b/Title With Subtitle 1`] = `
+<div
+  className="base title"
+>
+  <h1>
+    Test
+  </h1>
+  <p>
+    This will appear as the subtitle
+  </p>
+</div>
+`;
+
+exports[`Storyshots c/TeamGallery Base 1`] = `
+<div
+  className="base team-gallery"
+>
+  <div
+    className="title"
+  >
+    Leadership
+  </div>
+  <div
+    className="content"
+  >
+    <div
+      className="base person-card"
+    >
+      <header>
+        <img
+          alt=""
+          src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
+        />
+      </header>
+      <main>
+        <p
+          className="name"
+        >
+          <strong>
+            Phoebe Yao
+          </strong>
+        </p>
+        <p
+          className="position"
+        >
+          CEO & Founder
+        </p>
+      </main>
+    </div>
+    <div
+      className="base person-card"
+    >
+      <header>
+        <img
+          alt=""
+          src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
+        />
+      </header>
+      <main>
+        <p
+          className="name"
+        >
+          <strong>
+            Dulce May Tigol
+          </strong>
+        </p>
+        <p
+          className="position"
+        >
+          Accounting
+        </p>
+      </main>
+    </div>
+    <div
+      className="base person-card"
+    >
+      <header>
+        <img
+          alt=""
+          src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
+        />
+      </header>
+      <main>
+        <p
+          className="name"
+        >
+          <strong>
+            Ellen Free
+          </strong>
+        </p>
+        <p
+          className="position"
+        >
+          Growth
+        </p>
+      </main>
+    </div>
+    <div
+      className="base person-card"
+    >
+      <header>
+        <img
+          alt=""
+          src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
+        />
+      </header>
+      <main>
+        <p
+          className="name"
+        >
+          <strong>
+            Collins Mbulakyalo
+          </strong>
+        </p>
+        <p
+          className="position"
+        >
+          Software
+        </p>
+      </main>
+    </div>
+    <div
+      className="base person-card"
+    >
+      <header>
+        <img
+          alt=""
+          src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
+        />
+      </header>
+      <main>
+        <p
+          className="name"
+        >
+          <strong>
+            Kaylin Hu
+          </strong>
+        </p>
+        <p
+          className="position"
+        >
+          Operations
+        </p>
+      </main>
+    </div>
+    <div
+      className="base person-card"
+    >
+      <header>
+        <img
+          alt=""
+          src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
+        />
+      </header>
+      <main>
+        <p
+          className="name"
+        >
+          <strong>
+            Diza Hendrawan
+          </strong>
+        </p>
+        <p
+          className="position"
+        >
+          Marketing
+        </p>
+      </main>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots r/SwitchRouteMap Base 1`] = `"This component does not need a visual test."`;
+
+exports[`Storyshots r/common/PrivateRoute Base 1`] = `"This component does not need a visual test."`;

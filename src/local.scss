@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+:root {
+  --border-radius: .4em;
+  --font-default: inter, helvetica, helvetica neue, arial, verdana, sans-serif;
+  --primary-color: #8990b3;
+  --theme-border: 1px solid var(--metadata);
+}
+
+
+html {
+  font-family: var(--font-default);
+  font-size: 18px;
+}
+

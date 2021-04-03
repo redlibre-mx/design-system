@@ -1,0 +1,1 @@
+export { TeamGallery } from "./TeamGallery";

@@ -1,0 +1,63 @@
+name: Node.js CI
+
+on: [push, pull_request]
+#on:
+#  push:
+#    branches: [ $default-branch ]
+#  pull_request:
+#    branches: [ $default-branch ]
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        #node-version: [12.x, 14.x]
+        node-version: [14.x]
+
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    #- run: npm ci
+    - run: npm i
+    #- run: npm run build --if-present
+    - name: Test
+      env:
+        CI: true
+      run: npm run test
+
+  publish:
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      #with:
+        #token: secrets.GH_PERSONAL_ACCESS_TOKEN
+    - uses: nelonoel/branch-name@v1.0.1
+    - name: Detect branch
+      run: echo "Currently on branch $BRANCH_NAME, will publish to npm"
+
+    - name: If branch development version bump alpha
+      if: env.BRANCH_NAME == 'development'
+      uses: phips28/gh-action-bump-version@master
+      env:
+        #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}#this is the default but it doesnt work since gh cannot push to protected branches. This is why we used the PAT of tasks@HP.com
+        GITHUB_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+      with:
+        default: prerelease --preid=alpha
+
+    - run: |
+          echo "name: ${{ steps.pkg.outputs.name }}"
+          echo "version: ${{ steps.pkg.outputs.version }}"
+          echo "release: ${{ steps.pkg.outputs.release }}"
+        #uses: JS-DevTools/npm-publish@v1
+        #  with:
+        #    token: ${{ secrets.NPM_AUTOMATION_KEY }}
+        #    tag: "latest"
