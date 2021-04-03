@@ -27,7 +27,7 @@ In css, consume with `font-family:var(--font-heading)`
   }
   fontWeight={'bold'}
   sampleText={'Voix ambiguë d\'un cœur qui, au zéphyr, préfère les jattes de kiwis'}
-  fontFamily={ 'var(--font-paragraph)' }
+  fontFamily={ 'var(--font-heading)' }
 />
 
 ## Paragraph (body) font
@@ -52,5 +52,29 @@ In css, consume with `font-family:var(--font-paragraph)`
   //fontWeight={'bold'}
   sampleText={'Voix ambiguë d\'un cœur qui, au zéphyr, préfère les jattes de kiwis'}
   fontFamily={ 'var(--font-paragraph)' }
+/>
+
+## Subtitle (body) font
+
+In css, consume with `font-family:var(--font-paragraph)`
+
+<Typeset
+  fontSizes={
+    [
+      '-3',
+      '-2',
+      '-1',
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+    ].map((e) => `calc(var(--s${e}) * 1rem)`)
+  }
+  //fontWeight={'bold'}
+  sampleText={'Voix ambiguë d\'un cœur qui, au zéphyr, préfère les jattes de kiwis'}
+  fontFamily={ 'var(--font-subtitle)' }
 />
 

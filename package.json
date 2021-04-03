@@ -32,6 +32,7 @@
     "install:hooks": "git config --local core.hooksPath .githooks/",
     "link:bem": "npm link @redlibre/bem",
     "link:styles": "npm link @redlibre/styles",
+    "link:assets": "npm link @redlibre/assets",
     "link:all": "npm run link:bem && npm run link:styles"
   },
   "keywords": [],
@@ -78,6 +79,7 @@
     "stylelint-config-palantir": "^5.0.0"
   },
   "dependencies": {
+    "@redlibre/assets": "^1.1.4",
     "@redlibre/bem": "0.0.1-alpha.1",
     "@redlibre/styles": "0.0.2-alpha.7",
     "react": "^17.0.2",
