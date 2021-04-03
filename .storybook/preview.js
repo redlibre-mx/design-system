@@ -1,5 +1,5 @@
 import '../src/local.scss'
-import '@pareto-engineering/styles/dist/main.min.css'
+import '@redlibre/styles/dist/main.min.css'
 
 export const parameters = {
   layout:'fullscreen',

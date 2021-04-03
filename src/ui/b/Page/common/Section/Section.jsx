@@ -1,7 +1,7 @@
-/* @pareto-engineering/generator-front 1.0.0 */
+/* @redlibre/generator-front 1.0.0 */
 import * as React from 'react'
 import PropTypes from 'prop-types'
-import styleNames from '@pareto-engineering/bem'
+import styleNames from '@redlibre/bem'
 
 import usePage from '../../usePage'
 

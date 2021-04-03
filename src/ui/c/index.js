@@ -1,1 +1,0 @@
-export { TeamGallery } from './TeamGallery'

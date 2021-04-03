@@ -1,4 +1,3 @@
-export { DashboardNavbar } from './DashboardNavbar'
 export {
   SiteContext,
   SiteContextProvider,
