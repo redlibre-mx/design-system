@@ -33,7 +33,7 @@
     "link:bem": "npm link @redlibre/bem",
     "link:styles": "npm link @redlibre/styles",
     "link:assets": "npm link @redlibre/assets",
-    "link:all": "npm run link:bem && npm run link:styles"
+    "link:all": "npm link @redlibre/bem @redlibre/styles @redlibre/assets"
   },
   "keywords": [],
   "author": "",
