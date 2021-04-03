@@ -78,8 +78,8 @@
     "stylelint-config-palantir": "^5.0.0"
   },
   "dependencies": {
-    "@redlibre/bem": "0.0.1-alpha.1",
-    "@redlibre/styles": "0.0.2-alpha.5",
+    "@redlibre/bem": "0.0.1-alpha.0",
+    "@redlibre/styles": "0.0.2-alpha.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
