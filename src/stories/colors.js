@@ -53,6 +53,14 @@ const MONOCHROME = [
   'white',
 ]
 
+const EXPERIMENTAL = [
+  'exp',
+  'exp2',
+  'exp3',
+  'exp4',
+  'exp5',
+]
+
 const ALL_COLORS = [
   ...THEME,
   ...MODALS,
@@ -60,6 +68,7 @@ const ALL_COLORS = [
   ...UI,
   ...SM,
   ...MONOCHROME,
+  ...EXPERIMENTAL,
 ]
 
 export {
@@ -69,5 +78,6 @@ export {
   UI,
   SM,
   MONOCHROME,
+  EXPERIMENTAL,
   ALL_COLORS,
 }

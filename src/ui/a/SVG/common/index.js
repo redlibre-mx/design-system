@@ -1,0 +1,1 @@
+export { UseSVG } from './UseSVG'

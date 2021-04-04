@@ -6,7 +6,8 @@ import {
   modalsMap, 
   uiMap ,
   smMap,
-  monochromeMap
+  monochromeMap,
+  experimentalMap
 } from './helpers';
 
 <Meta title="StyleGuide/Colors" />
@@ -40,6 +41,14 @@ Color are collections of colors that put together, make a UI theme.
        />
      ) }
  </ColorPalette>
+ <ColorPalette>
+   { experimentalMap.map((e,i) =>
+     <ColorItem
+       key={i}
+       { ...e }
+     />
+   ) }
+   </ColorPalette>
  <ColorPalette>
    { modalsMap.map((e,i) =>
      <ColorItem

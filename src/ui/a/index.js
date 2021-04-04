@@ -4,3 +4,4 @@ export {
   useSite,
   useTheme,
 } from './SiteContext'
+export { SVG } from './SVG'

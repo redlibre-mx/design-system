@@ -1,0 +1,66 @@
+/* @pareto-engineering/generator-front 1.0.3 */
+
+@use "@redlibre/bem";
+
+$anim-stroke-dash-offset:2888;
+$anim-stroke-dash-array:2999;
+$animation-time:2s;
+$animation-repeats:1;
+
+// tdo as target, odo as origin
+
+@keyframes draw-stroke {
+  0% {
+    stroke-dashoffset: var(--svg-origin-stroke-dashoffset, 1000);
+  }
+
+  100% {
+    stroke-dashoffset: var(--svg-target-stroke-dashoffset, 0);
+  }
+}
+@keyframes dash {
+  from {
+    stroke-dashoffset: $anim-stroke-dash-offset;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash-a {
+  from {
+    stroke-dashoffset: $anim-stroke-dash-offset - 1;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+.#{bem.$base}.svg { //TODO or should it apply to svg elements altogether?
+  use {
+    fill: var(--x, transparent);
+    stroke: var(--y, transparent);
+    stroke-dasharray: var(--svg-dasharray);
+    stroke-dashoffset: var(--svg-dashoffset, 0);
+    stroke-width: var(--svg-stroke-width, 2);
+    transition: all .3s;
+  }
+
+  &.#{bem.$modifier-animated} {
+    --svg-origin-stroke-dashoffset: #{$anim-stroke-dash-offset};
+    --svg-dasharray: #{$anim-stroke-dash-array};
+    --svg-animation-time: #{$animation-time};
+    --svg-animation-repeats: #{$animation-repeats};
+
+    use {
+      animation: draw-stroke var(--svg-animation-time, 2s) linear .3s var(--svg-animation-repeats, 1) forwards;
+    }
+
+    &:hover,
+    &:focus {
+      //--path-animation: dash-a 1s linear 0s 1 forwards;
+    }
+  }
+}

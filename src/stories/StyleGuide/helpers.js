@@ -5,6 +5,7 @@ import {
   UI,
   SM,
   MONOCHROME,
+  EXPERIMENTAL,
 } from '../colors'
 
 const getColorMap = (prefix, list) => {
@@ -25,6 +26,7 @@ const getColorMap = (prefix, list) => {
 const brandMap = getColorMap('colorschemes.light.brand', THEME)
 const wheelMap = getColorMap('colorschemes.light.wheel', WHEEL)
 const modalsMap = getColorMap('colorschemes.light.modals', MODALS)
+const experimentalMap = getColorMap('colorschemes.light.experimental', EXPERIMENTAL)
 const uiMap = getColorMap('colorschemes.light.ui', UI)
 
 const smMap = getColorMap('palettes.social-media', SM)
@@ -37,4 +39,5 @@ export {
   uiMap,
   smMap,
   monochromeMap,
+  experimentalMap,
 }

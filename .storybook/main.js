@@ -13,11 +13,12 @@ module.exports = {
         'style-loader',
         {
           loader: 'css-loader',
-          options: {
+          options: {}
+          /*
           modules: {
               //exportOnlyLocals: true,
             },
-          },
+          },*/
             //modules:{
             //  mode:'global',
             //},
