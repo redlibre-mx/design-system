@@ -1,11 +1,11 @@
-/* @pareto-engineering/generator-front 0.2.4 */
+/* @redlibre/generator-front 0.2.4 */
 import * as React from 'react';
+import { useLayoutEffect } from 'react';
 import PropTypes from 'prop-types'; // Package-level Imports
 
-import styleNames from '@pareto-engineering/bem'; // Component-level imports
+import styleNames from '@redlibre/bem'; // Component-level imports
 
-import { Group } from "./common";
-import("./styles.scss"); // Helper Definition
+import { Group } from "./common"; // Helper Definition
 
 const baseClassName = styleNames.base;
 const componentClassName = 'card';
@@ -16,11 +16,16 @@ const Card = ({
   style,
   children // ...otherProps
 
-}) => /*#__PURE__*/React.createElement("div", {
-  id: id,
-  className: [baseClassName, componentClassName, userClassName].filter(e => e).join(' '),
-  style: style
-}, children);
+}) => {
+  useLayoutEffect(() => {
+    import("./styles.scss");
+  }, []);
+  return /*#__PURE__*/React.createElement("div", {
+    id: id,
+    className: [baseClassName, componentClassName, userClassName].filter(e => e).join(' '),
+    style: style
+  }, children);
+};
 
 Card.propTypes = {
   /**

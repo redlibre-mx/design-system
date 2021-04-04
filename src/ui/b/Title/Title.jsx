@@ -1,12 +1,12 @@
 /* @redlibre/generator-front 0.3.1 */
 import * as React from 'react'
+import { useLayoutEffect } from 'react'
 import PropTypes from 'prop-types'
 
 // Package-level Imports
 import styleNames from '@redlibre/bem'
 
 // Component-level imports
-import('./styles.scss')
 
 // Helper Definition
 const baseClassName = styleNames.base
@@ -28,31 +28,36 @@ const Title = ({
   subtitleStyle,
   subtitleProps,
   // ...otherProps
-}) => (
-  <div
-    id={id}
-    className={[
-      baseClassName,
-      componentClassName,
-      userClassName,
-    ]
-      .filter((e) => e)
-      .join(' ')}
-    style={style}
-  >
-    <HeadingWrapper
+}) => {
+  useLayoutEffect(() => {
+    import('./styles.scss')
+  }, [])
+
+  return (
+    <div
+      id={id}
       className={[
-        headingClassName,
-        styleNames.heading,
+        baseClassName,
+        componentClassName,
+        userClassName,
       ]
         .filter((e) => e)
         .join(' ')}
-      style={headingStyle}
-      {...headingProps}
+      style={style}
     >
-      { heading }
-    </HeadingWrapper>
-    { subtitle
+      <HeadingWrapper
+        className={[
+          headingClassName,
+          styleNames.heading,
+        ]
+          .filter((e) => e)
+          .join(' ')}
+        style={headingStyle}
+        {...headingProps}
+      >
+        { heading }
+      </HeadingWrapper>
+      { subtitle
     && (
     <SubtitleWrapper
       className={[
@@ -67,8 +72,9 @@ const Title = ({
       { subtitle }
     </SubtitleWrapper>
     )}
-  </div>
-)
+    </div>
+  )
+}
 
 Title.propTypes = {
   /**

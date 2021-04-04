@@ -9,7 +9,7 @@ var React = _interopRequireWildcard(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _bem = _interopRequireDefault(require("@pareto-engineering/bem"));
+var _bem = _interopRequireDefault(require("@redlibre/bem"));
 
 var _usePage = _interopRequireDefault(require("../../usePage"));
 

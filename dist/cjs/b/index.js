@@ -9,12 +9,6 @@ Object.defineProperty(exports, "Button", {
     return _Button.Button;
   }
 });
-Object.defineProperty(exports, "Segment", {
-  enumerable: true,
-  get: function get() {
-    return _Segment.Segment;
-  }
-});
 Object.defineProperty(exports, "Card", {
   enumerable: true,
   get: function get() {
@@ -41,8 +35,6 @@ Object.defineProperty(exports, "QuestionDropdown", {
 });
 
 var _Button = require("./Button");
-
-var _Segment = require("./Segment");
 
 var _Card = require("./Card");
 

@@ -8,7 +8,7 @@ import styleNames from '@redlibre/bem'
 import { PageHelmet, Section } from './common'
 import Context from './Context'
 
-import('./styles.scss')
+// import('./styles.scss')
 
 // Local Definitions
 const baseClassName = styleNames.base

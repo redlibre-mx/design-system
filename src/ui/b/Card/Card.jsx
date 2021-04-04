@@ -1,5 +1,6 @@
 /* @redlibre/generator-front 0.2.4 */
 import * as React from 'react'
+import { useLayoutEffect } from 'react'
 import PropTypes from 'prop-types'
 
 // Package-level Imports
@@ -7,8 +8,6 @@ import styleNames from '@redlibre/bem'
 
 // Component-level imports
 import { Group } from './common'
-
-import('./styles.scss')
 
 // Helper Definition
 const baseClassName = styleNames.base
@@ -20,17 +19,23 @@ const Card = ({
   style,
   children,
   // ...otherProps
-}) => (
-  <div
-    id={id}
-    className={[baseClassName, componentClassName, userClassName]
-      .filter((e) => e)
-      .join(' ')}
-    style={style}
-  >
-    {children}
-  </div>
-)
+}) => {
+  useLayoutEffect(() => {
+    import('./styles.scss')
+  }, [])
+
+  return (
+    <div
+      id={id}
+      className={[baseClassName, componentClassName, userClassName]
+        .filter((e) => e)
+        .join(' ')}
+      style={style}
+    >
+      {children}
+    </div>
+  )
+}
 
 Card.propTypes = {
   /**

@@ -1,8 +1,8 @@
-/* @pareto-engineering/generator-front 0.2.4 */
+/* @redlibre/generator-front 0.2.4 */
 import * as React from 'react';
 import PropTypes from 'prop-types'; // Package-level Imports
 
-import styleNames from '@pareto-engineering/bem'; // Component-level imports
+import styleNames from '@redlibre/bem'; // Component-level imports
 
 import("./styles.scss"); // Helper Definition
 

@@ -3,12 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "DashboardNavbar", {
-  enumerable: true,
-  get: function get() {
-    return _DashboardNavbar.DashboardNavbar;
-  }
-});
 Object.defineProperty(exports, "SiteContext", {
   enumerable: true,
   get: function get() {
@@ -33,7 +27,5 @@ Object.defineProperty(exports, "useTheme", {
     return _SiteContext.useTheme;
   }
 });
-
-var _DashboardNavbar = require("./DashboardNavbar");
 
 var _SiteContext = require("./SiteContext");

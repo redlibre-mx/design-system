@@ -9,7 +9,7 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _bem = _interopRequireDefault(require("@pareto-engineering/bem"));
+var _bem = _interopRequireDefault(require("@redlibre/bem"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

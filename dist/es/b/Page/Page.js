@@ -1,14 +1,14 @@
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
-/* @pareto-engineering/generator-front 1.0.0 */
+/* @redlibre/generator-front 1.0.0 */
 import * as React from 'react';
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import styleNames from '@pareto-engineering/bem'; // Imports from the component folder
+import styleNames from '@redlibre/bem'; // Imports from the component folder
 
 import { PageHelmet, Section } from "./common";
-import Context from "./Context";
-import("./styles.scss"); // Local Definitions
+import Context from "./Context"; // import('./styles.scss')
+// Local Definitions
 
 const baseClassName = styleNames.base;
 const componentClassName = 'page';

@@ -1,12 +1,12 @@
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
-/* @pareto-engineering/generator-front 0.3.1 */
+/* @redlibre/generator-front 0.3.1 */
 import * as React from 'react';
+import { useLayoutEffect } from 'react';
 import PropTypes from 'prop-types'; // Package-level Imports
 
-import styleNames from '@pareto-engineering/bem'; // Component-level imports
-
-import("./styles.scss"); // Helper Definition
+import styleNames from '@redlibre/bem'; // Component-level imports
+// Helper Definition
 
 const baseClassName = styleNames.base;
 const componentClassName = 'title';
@@ -27,17 +27,22 @@ const Title = ({
   subtitleStyle,
   subtitleProps // ...otherProps
 
-}) => /*#__PURE__*/React.createElement("div", {
-  id: id,
-  className: [baseClassName, componentClassName, userClassName].filter(e => e).join(' '),
-  style: style
-}, /*#__PURE__*/React.createElement(HeadingWrapper, _extends({
-  className: [headingClassName, styleNames.heading].filter(e => e).join(' '),
-  style: headingStyle
-}, headingProps), heading), subtitle && /*#__PURE__*/React.createElement(SubtitleWrapper, _extends({
-  className: [subtitleClassName, styleNames.subtitle].filter(e => e).join(' '),
-  style: subtitleStyle
-}, subtitleProps), subtitle));
+}) => {
+  useLayoutEffect(() => {
+    import("./styles.scss");
+  }, []);
+  return /*#__PURE__*/React.createElement("div", {
+    id: id,
+    className: [baseClassName, componentClassName, userClassName].filter(e => e).join(' '),
+    style: style
+  }, /*#__PURE__*/React.createElement(HeadingWrapper, _extends({
+    className: [headingClassName, styleNames.heading].filter(e => e).join(' '),
+    style: headingStyle
+  }, headingProps), heading), subtitle && /*#__PURE__*/React.createElement(SubtitleWrapper, _extends({
+    className: [subtitleClassName, styleNames.subtitle].filter(e => e).join(' '),
+    style: subtitleStyle
+  }, subtitleProps), subtitle));
+};
 
 Title.propTypes = {
   /**

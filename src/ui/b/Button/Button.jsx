@@ -1,12 +1,12 @@
 /* @redlibre/generator-front 0.2.4 */
 import * as React from 'react'
+import { useLayoutEffect } from 'react'
 import PropTypes from 'prop-types'
 
 // Package-level Imports
 import styleNames from '@redlibre/bem'
 
 // Component-level imports
-import('./styles.scss')
 
 // Helper Definition
 const baseClassName = styleNames.base
@@ -20,24 +20,30 @@ const Button = ({
 
   isGhost,
   ...otherProps
-}) => (
-  <button
-    id={id}
-    className={[
-      baseClassName,
-      componentClassName,
-      userClassName,
-      isGhost && styleNames.modifierGhost,
-    ]
-      .filter((e) => e)
-      .join(' ')}
-    style={style}
-    type="button"
-    {...otherProps}
-  >
-    {children}
-  </button>
-)
+}) => {
+  useLayoutEffect(() => {
+    import('./styles.scss')
+  }, [])
+
+  return (
+    <button
+      id={id}
+      className={[
+        baseClassName,
+        componentClassName,
+        userClassName,
+        isGhost && styleNames.modifierGhost,
+      ]
+        .filter((e) => e)
+        .join(' ')}
+      style={style}
+      type="button"
+      {...otherProps}
+    >
+      {children}
+    </button>
+  )
+}
 
 Button.propTypes = {
   /**

@@ -1,8 +1,8 @@
-/* @pareto-engineering/generator-front 0.2.4 */
+/* @redlibre/generator-front 0.2.4 */
 
 @use "@aztlan/stylebook/src/mixins";
 @use "@aztlan/stylebook/src/globals" as *;
-@use "@pareto-engineering/bem" ;
+@use "@redlibre/bem" ;
 
 $separator-width:2px;
 $separator-color:var(--metadata);

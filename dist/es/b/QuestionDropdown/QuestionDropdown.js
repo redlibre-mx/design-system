@@ -1,8 +1,8 @@
-/* @pareto-engineering/generator-front 0.2.7 */
+/* @redlibre/generator-front 0.2.7 */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types'; // Package-level Imports
 
-import styleNames from '@pareto-engineering/bem'; // Component-level imports
+import styleNames from '@redlibre/bem'; // Component-level imports
 
 import("./styles.scss"); // Helper Definition
 

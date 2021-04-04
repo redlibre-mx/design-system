@@ -14,11 +14,14 @@ module.exports = {
         {
           loader: 'css-loader',
           options: {
+          modules: {
+              //exportOnlyLocals: true,
+            },
+          },
             //modules:{
             //  mode:'global',
             //},
             //localIdentName:"[name]__hello_[local]__[hash:base64:5]"
-          },
         },
         {
           loader:'sass-loader',
