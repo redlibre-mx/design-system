@@ -35,11 +35,11 @@ const helmetMap = [
 
   {
     variables:['canonical'],
-    render   :(v, c) => (c.SITE_CANONICAL
+    render   :(v, c) => (c.SITE?.CANONICAL
       ? (
         <link
           rel="canonical"
-          href={`${c.SITE_CANONICAL}${v}`}
+          href={`${c.SITE?.CANONICAL}${v}`}
           key="canonical"
         />
       )
@@ -133,11 +133,11 @@ const helmetMap = [
 
   {
     variables:['og_url', 'canonical'],
-    render   :(v, c) => (c.SITE_CANONICAL
+    render   :(v, c) => (c.SITE?.CANONICAL
       ? (
         <meta
           property="og:url"
-          content={`${c.SITE_CANONICAL}/${v}`}
+          content={`${c.SITE?.CANONICAL}/${v}`}
           key="og_url"
         />
       )

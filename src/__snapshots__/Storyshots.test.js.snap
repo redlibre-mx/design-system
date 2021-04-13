@@ -1,5 +1,212 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots a/SVG Animated 1`] = `
+Array [
+  <svg
+    className="base svg y-red modifierAnimated"
+    height="200"
+    preserveAspectRatio="xMinYMin meet"
+    version="1.1"
+    viewBox="0 0 512 512"
+    width="200"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <use
+      className=""
+      href="/sprite.svg#engine"
+      style={
+        Object {
+          "style": undefined,
+        }
+      }
+    />
+  </svg>,
+  <svg
+    className="base svg y-indigo modifierAnimated"
+    height="200"
+    preserveAspectRatio="xMinYMin meet"
+    style={
+      Object {
+        "--svg-animation-repeats": "3",
+        "--svg-animation-time": "10s",
+        "--svg-origin-stroke-dashoffset": 100,
+        "--svg-stroke-width": 9,
+        "--svg-target-stroke-dashoffset": 10000,
+      }
+    }
+    version="1.1"
+    viewBox="0 0 512 512"
+    width="200"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <use
+      className=""
+      href="/sprite.svg#engine"
+      style={
+        Object {
+          "style": undefined,
+        }
+      }
+    />
+  </svg>,
+  <svg
+    className="base svg y-red modifierAnimated"
+    height="200"
+    preserveAspectRatio="xMinYMin meet"
+    style={
+      Object {
+        "--svg-animation-repeats": "infinite",
+        "--svg-animation-time": "20s",
+        "--svg-origin-stroke-dashoffset": 5000,
+        "--svg-target-stroke-dashoffset": 0,
+      }
+    }
+    version="1.1"
+    viewBox="0 0 512 512"
+    width="200"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <use
+      className=""
+      href="/sprite.svg#engine"
+      style={
+        Object {
+          "style": undefined,
+        }
+      }
+    />
+  </svg>,
+]
+`;
+
+exports[`Storyshots a/SVG Base 1`] = `
+<svg
+  className="base svg x-black"
+  height="200"
+  preserveAspectRatio="xMinYMin meet"
+  version="1.1"
+  viewBox="0 0 512 512"
+  width="200"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <use
+    className=""
+    href="/sprite.svg#engine"
+    style={
+      Object {
+        "style": undefined,
+      }
+    }
+  />
+</svg>
+`;
+
+exports[`Storyshots a/SVG Logo 1`] = `
+Array [
+  <p>
+    The logo needs to have a stroke with 
+    <code>
+      y
+    </code>
+  </p>,
+  <svg
+    className="base svg"
+    height="200"
+    preserveAspectRatio="xMinYMin meet"
+    style={
+      Object {
+        "--color-1": "var(--red)",
+        "--color-2": "var(--violet)",
+        "--color-3": "var(--pink)",
+        "--color-4": "var(--green)",
+      }
+    }
+    version="1.1"
+    viewBox="0 0 512 512"
+    width="200"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <use
+      className=""
+      href="/logo.svg#logo"
+      style={
+        Object {
+          "style": undefined,
+        }
+      }
+    />
+  </svg>,
+  <svg
+    className="base svg y-red"
+    height="200"
+    preserveAspectRatio="xMinYMin meet"
+    version="1.1"
+    viewBox="0 0 512 512"
+    width="200"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <use
+      className=""
+      href="/logo.svg#logo"
+      style={
+        Object {
+          "style": undefined,
+        }
+      }
+    />
+  </svg>,
+  <svg
+    className="base svg y-black"
+    height="200"
+    preserveAspectRatio="xMinYMin meet"
+    style={
+      Object {
+        "--color-1": "var(--blue)",
+        "--color-2": "var(--indigo)",
+        "--color-3": "var(--clear)",
+        "--color-4": "var(--orange)",
+      }
+    }
+    version="1.1"
+    viewBox="0 0 512 512"
+    width="200"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <use
+      className=""
+      href="/logo.svg"
+      style={
+        Object {
+          "style": undefined,
+        }
+      }
+    />
+  </svg>,
+]
+`;
+
+exports[`Storyshots a/SVG Stroke 1`] = `
+<svg
+  className="base svg y-green"
+  height="200"
+  preserveAspectRatio="xMinYMin meet"
+  version="1.1"
+  viewBox="0 0 512 512"
+  width="200"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <use
+    className=""
+    href="/sprite.svg#engine"
+    style={
+      Object {
+        "style": undefined,
+      }
+    }
+  />
+</svg>
+`;
+
 exports[`Storyshots a/SiteContext Base 1`] = `"Sample SiteContext"`;
 
 exports[`Storyshots b/Button Base 1`] = `
@@ -300,6 +507,56 @@ Array [
     This is a
      
     white
+     
+    button
+  </button>,
+  <button
+    className="base button x-exp"
+    type="button"
+  >
+    This is a
+     
+    exp
+     
+    button
+  </button>,
+  <button
+    className="base button x-exp2"
+    type="button"
+  >
+    This is a
+     
+    exp2
+     
+    button
+  </button>,
+  <button
+    className="base button x-exp3"
+    type="button"
+  >
+    This is a
+     
+    exp3
+     
+    button
+  </button>,
+  <button
+    className="base button x-exp4"
+    type="button"
+  >
+    This is a
+     
+    exp4
+     
+    button
+  </button>,
+  <button
+    className="base button x-exp5"
+    type="button"
+  >
+    This is a
+     
+    exp5
      
     button
   </button>,

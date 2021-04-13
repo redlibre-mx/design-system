@@ -7,7 +7,7 @@ $anim-stroke-dash-array:2999;
 $animation-time:2s;
 $animation-repeats:1;
 
-// tdo as target, odo as origin
+// TODO cleanup --custom-props
 
 @keyframes draw-stroke {
   0% {
@@ -18,25 +18,6 @@ $animation-repeats:1;
     stroke-dashoffset: var(--svg-target-stroke-dashoffset, 0);
   }
 }
-@keyframes dash {
-  from {
-    stroke-dashoffset: $anim-stroke-dash-offset;
-  }
-
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes dash-a {
-  from {
-    stroke-dashoffset: $anim-stroke-dash-offset - 1;
-  }
-
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
 
 .#{bem.$base}.svg { //TODO or should it apply to svg elements altogether?
   use {
@@ -55,7 +36,13 @@ $animation-repeats:1;
     --svg-animation-repeats: #{$animation-repeats};
 
     use {
-      animation: draw-stroke var(--svg-animation-time, 2s) linear .3s var(--svg-animation-repeats, 1) forwards;
+      animation:
+        draw-stroke // animation name
+        var(--svg-animation-time, 2s) //duration
+        linear // easing
+        .3s //delay TODO ?
+        var(--svg-animation-repeats, 1) //repeat
+        forwards; //Final keyframe
     }
 
     &:hover,

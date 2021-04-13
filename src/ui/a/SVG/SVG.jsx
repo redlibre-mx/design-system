@@ -144,8 +144,12 @@ SVG.propTypes = {
   target:PropTypes.string,
 
   /**
-   * In case this is not a sprite but a standalone svg. Not recommended here, better use Figure. The only reason you would wanna use this instead of target is in the case you need to dynamically pass css classes to the inner svg com
-ponents
+   * In case this is not a sprite but a standalone svg.
+   * Not recommended here, better use Figure.
+   * The only reason you would wanna use this instead of target
+   * is in the case you need to dynamically pass css classes
+   * to the inner svg components
+   * TODO remove and also from UseSVG
    */
   source:PropTypes.string,
 
