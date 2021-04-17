@@ -1,44 +1,84 @@
-/* @redlibre/generator-front 0.2.4 */
+/* @pareto-engineering/generator-front 1.0.9 */
 
 @use "@redlibre/bem";
 
-$padding: .6em .6em .48em;
-$default-color:primary;
-$font-weight:bold;
+//$default-color:var(--x, var(--paragraph));
+$default-color:var(--paragraph);
+$default-padding:.67em 1em;
+$default-border:2px solid $default-color;
+$default-border-radius:2em;
+
+%reset-button {
+  /* Corrects inability to style clickable `input` types in iOS */
+  appearance: none;
+
+  background: transparent;
+  border: none;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  width: auto;
+}
+
+/* Remove excess padding and border in Firefox 4+ */
 
 .#{bem.$base}.button {
-  background: var(--x, var(--#{$default-color}));
-  border: transparent;
-  border-radius: var(--border-radius);
-  color: var(--on-x, var(--on-#{$default-color}));
-  font-weight: 600;
-  padding: $padding;
+  @extend %reset-button;
 
-  &:not(:disabled) {
-    cursor: pointer;
-
-    &:hover {
-      background: var(--light-x, var(--light-#{$default-color}));
-    }
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
   }
+  border: $default-border;
+  //border: $default-border;
+  border-radius: $default-border-radius;
+  color: $default-color;
+  cursor: pointer;
 
-
-  &.#{bem.$modifier-ghost} {
-    background: transparent;
-    border: 1px solid var(--x, var(--#{$default-color}));
-    color: var(--x, var(--#{$default-color}));
-
-    &:not(:disabled) {
-      &:hover {
-        background: var(--x, var(--#{$default-color}));
-        border: 1px solid transparent;
-        color: var(--on-x, var(--on-#{$default-color}));
-      }
-    }
-  }
+  font-family: var(--font-paragraph);
+  padding: $default-padding;
 
   &:disabled {
-    //text-decoration: line-through;
+    cursor: unset;
+    text-decoration: line-through;
+  }
+
+  &.font-heading {
+    font-family: var(--font-heading);
+    font-size: calc(var(--s1) *1em);
+    font-weight: bold;
+    letter-spacing: 0;
+    padding: .6em;
+    text-transform: unset;
+  }
+
+  &:hover {
+    background-color: var(--light-x);
+    //border: 4px solid $default-color;
+    //border-color: var(--on-x);
+    //color: var(--on-x);
+  }
+
+  &.important,
+  &:focus {
+    background-color: var(--x);
+    border-color: var(--on-x);
+    color: var(--on-x);
+  }
+
+  &.important:hover {
+    background-color: var(--dark-x);
   }
 }
 

@@ -1,25 +1,32 @@
-/* @redlibre/generator-front 0.2.4 */
+/* @pareto-engineering/generator-front 1.0.9 */
 import * as React from 'react'
+
 import { useLayoutEffect } from 'react'
+
 import PropTypes from 'prop-types'
 
-// Package-level Imports
 import styleNames from '@redlibre/bem'
 
-// Component-level imports
+// Local Definitions
 
-// Helper Definition
 const baseClassName = styleNames.base
+
 const componentClassName = 'button'
 
+/**
+ * This is the component description.
+ */
 const Button = ({
   id,
-  className: userClassName,
+  className:userClassName,
   style,
   children,
 
-  isGhost,
-  ...otherProps
+  disabled,
+
+  fontHeading,
+
+  important,
 }) => {
   useLayoutEffect(() => {
     import('./styles.scss')
@@ -27,18 +34,23 @@ const Button = ({
 
   return (
     <button
+      type="button"
       id={id}
       className={[
+
         baseClassName,
+
         componentClassName,
         userClassName,
-        isGhost && styleNames.modifierGhost,
+
+        fontHeading && 'font-heading',
+        important && 'important',
       ]
         .filter((e) => e)
         .join(' ')}
       style={style}
-      type="button"
-      {...otherProps}
+      disabled={disabled}
+      // {...otherProps}
     >
       {children}
     </button>
@@ -67,13 +79,13 @@ Button.propTypes = {
   children:PropTypes.node,
 
   /**
-   * Whether the button has the ghost style
+   *  Whether the button is disabled.
    */
-  isGhost:PropTypes.bool,
+  disabled:PropTypes.bool,
 }
 
 Button.defaultProps = {
-  // someProp:false
+  disabled:false,
 }
 
 export default Button

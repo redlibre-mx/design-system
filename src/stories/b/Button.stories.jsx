@@ -1,4 +1,4 @@
-/* @pareto-engineering/generator-front 0.2.4 */
+/* @pareto-engineering/generator-front 1.0.9 */
 import * as React from 'react'
 
 import { Button } from 'ui'
@@ -14,35 +14,48 @@ export default {
     // storyfn => <div className="">{ storyfn() }</div>,
   ],
   argTypes:{
-    isGhost :{ control: 'boolean' },
-    disabled:{ control: 'boolean' },
+    disabled   :{ control: 'boolean' },
+    fontHeading:{ control: 'boolean' },
+    children   :{ control: 'text' },
   },
 }
 
-export const Base = (props) => <Button {...props}>Sample Button</Button>
+export const Base = (props) => [...Array(2)].map((e, i) => (
+  <span className={`s${i * 3}`}>
+    <Button children="Descubre mas" {...props} className="x-exp3" />
+  </span>
 
-export const Ghost = (props) => (
-  <Button isGhost {...props}>
-    Sample Button
-  </Button>
+))
+
+export const Disabled = () => (
+  <Button disabled>Indisponible</Button>
 )
 
-export const Colors = (props) => (
-  <>
-    {ALL_COLORS.map((colorName) => (
-      <Button className={`x-${colorName}`} key={colorName} {...props}>
-        This is a
-        {' '}
-        {colorName}
-        {' '}
-        button
+export const Sizes = () => (
+  [...Array(6)].map((e, i) => (
+    <div className={`s${i} x-exp3`}>
+      <Button fontHeading>
+        Ver espacios
       </Button>
-    ))}
-  </>
+    </div>
+  ))
+)
+export const Colors = () => (
+  ALL_COLORS.map((colorName) => (
+    <span className="s0">
+      <Button className={`x-${colorName}`}>
+        Reserva Ahora
+      </Button>
+    </span>
+  ))
 )
 
-export const Disabled = (props) => (
-  <Button disabled {...props}>
-    Sample Button
-  </Button>
+export const Important = () => (
+  ALL_COLORS.map((colorName) => (
+    <span className="s0">
+      <Button className={`x-${colorName}`} important>
+        Reserva Ahora
+      </Button>
+    </span>
+  ))
 )
