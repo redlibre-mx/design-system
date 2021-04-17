@@ -20,8 +20,10 @@ export default {
 export const Base = () => (
   <SiteContextProvider
     config={{
-      SITE_NAME     :'My site',
-      SITE_CANONICAL:'https://mysite.com',
+      SITE:{
+        NAME     :'name of my site',
+        CANONICAL:'https://mysite.com',
+      },
     }}
   >
     Sample SiteContext

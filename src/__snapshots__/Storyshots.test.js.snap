@@ -174,7 +174,7 @@ Array [
   >
     <use
       className=""
-      href="/logo.svg"
+      href="/logo.svg#logo"
       style={
         Object {
           "style": undefined,
@@ -210,356 +210,408 @@ exports[`Storyshots a/SVG Stroke 1`] = `
 exports[`Storyshots a/SiteContext Base 1`] = `"Sample SiteContext"`;
 
 exports[`Storyshots b/Button Base 1`] = `
-<button
-  className="base button"
-  type="button"
->
-  Sample Button
-</button>
+Array [
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-exp3"
+      disabled={false}
+      type="button"
+    >
+      Descubre mas
+    </button>
+  </span>,
+  <span
+    className="s3"
+  >
+    <button
+      className="base button x-exp3"
+      disabled={false}
+      type="button"
+    >
+      Descubre mas
+    </button>
+  </span>,
+]
 `;
 
 exports[`Storyshots b/Button Colors 1`] = `
 Array [
-  <button
-    className="base button x-success"
-    type="button"
+  <span
+    className="s0"
   >
-    This is a
-     
-    success
-     
-    button
-  </button>,
-  <button
-    className="base button x-warning"
-    type="button"
+    <button
+      className="base button x-success"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    warning
-     
-    button
-  </button>,
-  <button
-    className="base button x-error"
-    type="button"
+    <button
+      className="base button x-warning"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    error
-     
-    button
-  </button>,
-  <button
-    className="base button x-red"
-    type="button"
+    <button
+      className="base button x-error"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    red
-     
-    button
-  </button>,
-  <button
-    className="base button x-pink"
-    type="button"
+    <button
+      className="base button x-red"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    pink
-     
-    button
-  </button>,
-  <button
-    className="base button x-orange"
-    type="button"
+    <button
+      className="base button x-pink"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    orange
-     
-    button
-  </button>,
-  <button
-    className="base button x-yellow"
-    type="button"
+    <button
+      className="base button x-orange"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    yellow
-     
-    button
-  </button>,
-  <button
-    className="base button x-green"
-    type="button"
+    <button
+      className="base button x-yellow"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    green
-     
-    button
-  </button>,
-  <button
-    className="base button x-indigo"
-    type="button"
+    <button
+      className="base button x-green"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    indigo
-     
-    button
-  </button>,
-  <button
-    className="base button x-indigo2"
-    type="button"
+    <button
+      className="base button x-indigo"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    indigo2
-     
-    button
-  </button>,
-  <button
-    className="base button x-blue"
-    type="button"
+    <button
+      className="base button x-indigo2"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    blue
-     
-    button
-  </button>,
-  <button
-    className="base button x-violet"
-    type="button"
+    <button
+      className="base button x-blue"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    violet
-     
-    button
-  </button>,
-  <button
-    className="base button x-clear"
-    type="button"
+    <button
+      className="base button x-violet"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    clear
-     
-    button
-  </button>,
-  <button
-    className="base button x-background"
-    type="button"
+    <button
+      className="base button x-clear"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    background
-     
-    button
-  </button>,
-  <button
-    className="base button x-heading"
-    type="button"
+    <button
+      className="base button x-background"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    heading
-     
-    button
-  </button>,
-  <button
-    className="base button x-paragraph"
-    type="button"
+    <button
+      className="base button x-heading"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    paragraph
-     
-    button
-  </button>,
-  <button
-    className="base button x-subtitle"
-    type="button"
+    <button
+      className="base button x-paragraph"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    subtitle
-     
-    button
-  </button>,
-  <button
-    className="base button x-metadata"
-    type="button"
+    <button
+      className="base button x-subtitle"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    metadata
-     
-    button
-  </button>,
-  <button
-    className="base button x-link"
-    type="button"
+    <button
+      className="base button x-metadata"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    link
-     
-    button
-  </button>,
-  <button
-    className="base button x-navlink"
-    type="button"
+    <button
+      className="base button x-link"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    navlink
-     
-    button
-  </button>,
-  <button
-    className="base button x-twitter"
-    type="button"
+    <button
+      className="base button x-navlink"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    twitter
-     
-    button
-  </button>,
-  <button
-    className="base button x-facebook"
-    type="button"
+    <button
+      className="base button x-twitter"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    facebook
-     
-    button
-  </button>,
-  <button
-    className="base button x-instagram"
-    type="button"
+    <button
+      className="base button x-facebook"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    instagram
-     
-    button
-  </button>,
-  <button
-    className="base button x-google"
-    type="button"
+    <button
+      className="base button x-instagram"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    google
-     
-    button
-  </button>,
-  <button
-    className="base button x-black"
-    type="button"
+    <button
+      className="base button x-google"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    black
-     
-    button
-  </button>,
-  <button
-    className="base button x-anchor"
-    type="button"
+    <button
+      className="base button x-black"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    anchor
-     
-    button
-  </button>,
-  <button
-    className="base button x-grey"
-    type="button"
+    <button
+      className="base button x-anchor"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    grey
-     
-    button
-  </button>,
-  <button
-    className="base button x-pearl"
-    type="button"
+    <button
+      className="base button x-grey"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    pearl
-     
-    button
-  </button>,
-  <button
-    className="base button x-white"
-    type="button"
+    <button
+      className="base button x-pearl"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    white
-     
-    button
-  </button>,
-  <button
-    className="base button x-exp"
-    type="button"
+    <button
+      className="base button x-white"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    exp
-     
-    button
-  </button>,
-  <button
-    className="base button x-exp2"
-    type="button"
+    <button
+      className="base button x-exp"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    exp2
-     
-    button
-  </button>,
-  <button
-    className="base button x-exp3"
-    type="button"
+    <button
+      className="base button x-exp2"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    exp3
-     
-    button
-  </button>,
-  <button
-    className="base button x-exp4"
-    type="button"
+    <button
+      className="base button x-exp3"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    exp4
-     
-    button
-  </button>,
-  <button
-    className="base button x-exp5"
-    type="button"
+    <button
+      className="base button x-exp4"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
   >
-    This is a
-     
-    exp5
-     
-    button
-  </button>,
+    <button
+      className="base button x-exp5"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
 ]
 `;
 
@@ -569,17 +621,458 @@ exports[`Storyshots b/Button Disabled 1`] = `
   disabled={true}
   type="button"
 >
-  Sample Button
+  Indisponible
 </button>
 `;
 
-exports[`Storyshots b/Button Ghost 1`] = `
-<button
-  className="base button modifierGhost"
-  type="button"
->
-  Sample Button
-</button>
+exports[`Storyshots b/Button Important 1`] = `
+Array [
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-success"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-warning"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-error"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-red"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-pink"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-orange"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-yellow"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-green"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-indigo"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-indigo2"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-blue"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-violet"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-clear"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-background"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-heading"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-paragraph"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-subtitle"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-metadata"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-link"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-navlink"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-twitter"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-facebook"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-instagram"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-google"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-black"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-anchor"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-grey"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-pearl"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-white"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-exp"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-exp2"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-exp3"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-exp4"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+  <span
+    className="s0"
+  >
+    <button
+      className="base button x-exp5"
+      disabled={false}
+      type="button"
+    >
+      Reserva Ahora
+    </button>
+  </span>,
+]
+`;
+
+exports[`Storyshots b/Button Sizes 1`] = `
+Array [
+  <div
+    className="s0 x-exp3"
+  >
+    <button
+      className="base button font-heading"
+      disabled={false}
+      type="button"
+    >
+      Ver espacios
+    </button>
+  </div>,
+  <div
+    className="s1 x-exp3"
+  >
+    <button
+      className="base button font-heading"
+      disabled={false}
+      type="button"
+    >
+      Ver espacios
+    </button>
+  </div>,
+  <div
+    className="s2 x-exp3"
+  >
+    <button
+      className="base button font-heading"
+      disabled={false}
+      type="button"
+    >
+      Ver espacios
+    </button>
+  </div>,
+  <div
+    className="s3 x-exp3"
+  >
+    <button
+      className="base button font-heading"
+      disabled={false}
+      type="button"
+    >
+      Ver espacios
+    </button>
+  </div>,
+  <div
+    className="s4 x-exp3"
+  >
+    <button
+      className="base button font-heading"
+      disabled={false}
+      type="button"
+    >
+      Ver espacios
+    </button>
+  </div>,
+  <div
+    className="s5 x-exp3"
+  >
+    <button
+      className="base button font-heading"
+      disabled={false}
+      type="button"
+    >
+      Ver espacios
+    </button>
+  </div>,
+]
 `;
 
 exports[`Storyshots b/Card Base 1`] = `
@@ -767,6 +1260,25 @@ exports[`Storyshots b/QuestionDropdown With SEO 1`] = `
 </div>
 `;
 
+exports[`Storyshots b/ThemeSelector Base 1`] = `
+<div
+  className="ui-undefined y-background b-y"
+>
+  <p>
+    Theme :
+  </p>
+  <button
+    className="base theme-selector"
+    onClick={[Function]}
+    type="button"
+  >
+    <span
+      className="v0 m-v icon"
+    />
+  </button>
+</div>
+`;
+
 exports[`Storyshots b/Title Base 1`] = `
 <div
   className="base title"
@@ -911,6 +1423,335 @@ exports[`Storyshots b/Title With Subtitle 1`] = `
 </div>
 `;
 
-exports[`Storyshots r/SwitchRouteMap Base 1`] = `"This component does not need a visual test."`;
-
-exports[`Storyshots r/common/PrivateRoute Base 1`] = `"This component does not need a visual test."`;
+exports[`Storyshots test/Experiment1 Base 1`] = `
+<div
+  className="u1 base experiment1"
+>
+  <nav>
+    <div
+      className="logo"
+    >
+      <svg
+        className="base svg y-paragraph"
+        height="4em"
+        preserveAspectRatio="xMinYMin meet"
+        style={
+          Object {
+            "--svg-stroke-width": 15,
+          }
+        }
+        version="1.1"
+        viewBox="0 0 512 512"
+        width="4em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <use
+          className=""
+          href="/logo.svg#logo"
+          style={
+            Object {
+              "style": undefined,
+            }
+          }
+        />
+      </svg>
+    </div>
+    <div
+      className="content"
+    >
+      this is the main content
+    </div>
+    <div
+      className="menu"
+    >
+      <ul>
+        <li>
+          Eventos
+        </li>
+        <li>
+          Espacios
+        </li>
+        <li>
+          Quienes somos
+        </li>
+        <li>
+          Blog
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div
+    className="news"
+  >
+    <ul
+      style={
+        Object {
+          "--animation-items-count": 10,
+        }
+      }
+    >
+      <li>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </li>
+      <li>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </li>
+      <li>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </li>
+      <li>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </li>
+      <li>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </li>
+      <li>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </li>
+      <li>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </li>
+      <li>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </li>
+      <li>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </li>
+      <li>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </li>
+    </ul>
+  </div>
+  <main>
+    <section
+      className="event-section"
+    >
+      <div
+        className="head"
+      >
+        <div
+          className="base title s1"
+        >
+          <h1
+            className="heading"
+          >
+            Esta semana
+          </h1>
+          <p
+            className="subtitle"
+          >
+            Estos son los eventos cerca de ti que tendran lugar en los proximos dias
+          </p>
+        </div>
+      </div>
+      <div
+        className="events"
+      >
+        <div
+          className="event-card"
+        >
+          <header>
+            <p
+              className="title"
+            >
+              Inverse transitional installation
+            </p>
+            <p
+              className="location"
+            >
+              Ferryborough
+            </p>
+          </header>
+          <section
+            className="image"
+          >
+            <img
+              alt=""
+              src="https://images.pexels.com/photos/6967343/pexels-photo-6967343.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            />
+          </section>
+          <main>
+            Qui non voluptatem.
+            Music
+          </main>
+        </div>
+        <div
+          className="event-card"
+        >
+          <header>
+            <p
+              className="title"
+            >
+              Digitized context-sensitive concept
+            </p>
+            <p
+              className="location"
+            >
+              Abdulmouth
+            </p>
+          </header>
+          <section
+            className="image"
+          >
+            <img
+              alt=""
+              src="https://images.pexels.com/photos/6967343/pexels-photo-6967343.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            />
+          </section>
+          <main>
+            Nihil magni consequatur sit voluptatum exercitationem perferendis sapiente consequatur.
+            Shoes
+          </main>
+        </div>
+      </div>
+      <aside>
+        <div
+          className="event-segment"
+        >
+          <section
+            className="image"
+          >
+            <img
+              alt=""
+              src="https://images.pexels.com/photos/6967343/pexels-photo-6967343.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            />
+          </section>
+          <header>
+            <p
+              className="title"
+            >
+              Inverse transitional installation
+            </p>
+          </header>
+          <main>
+            Ferryborough / Music
+          </main>
+        </div>
+        <div
+          className="event-segment"
+        >
+          <section
+            className="image"
+          >
+            <img
+              alt=""
+              src="https://images.pexels.com/photos/6967343/pexels-photo-6967343.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            />
+          </section>
+          <header>
+            <p
+              className="title"
+            >
+              Digitized context-sensitive concept
+            </p>
+          </header>
+          <main>
+            Abdulmouth / Shoes
+          </main>
+        </div>
+        <div
+          className="event-segment"
+        >
+          <section
+            className="image"
+          >
+            <img
+              alt=""
+              src="https://images.pexels.com/photos/6967343/pexels-photo-6967343.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            />
+          </section>
+          <header>
+            <p
+              className="title"
+            >
+              Implemented empowering emulation
+            </p>
+          </header>
+          <main>
+            Placentia / Outdoors
+          </main>
+        </div>
+        <div
+          className="event-segment"
+        >
+          <section
+            className="image"
+          >
+            <img
+              alt=""
+              src="https://images.pexels.com/photos/6967343/pexels-photo-6967343.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            />
+          </section>
+          <header>
+            <p
+              className="title"
+            >
+              Networked bifurcated capacity
+            </p>
+          </header>
+          <main>
+            Port Jaylin / Baby
+          </main>
+        </div>
+        <div
+          className="event-segment"
+        >
+          <section
+            className="image"
+          >
+            <img
+              alt=""
+              src="https://images.pexels.com/photos/6967343/pexels-photo-6967343.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            />
+          </section>
+          <header>
+            <p
+              className="title"
+            >
+              Diverse needs-based initiative
+            </p>
+          </header>
+          <main>
+            Spencerport / Clothing
+          </main>
+        </div>
+      </aside>
+    </section>
+    <section>
+      <div
+        className="base title s1"
+      >
+        <h1
+          className="heading"
+        >
+          Fotografia
+        </h1>
+        <p
+          className="subtitle"
+        >
+          Estos son los eventos cerca de ti que tendran lugar en los proximos dias
+        </p>
+      </div>
+    </section>
+    <section>
+      <div
+        className="base title"
+      >
+        <h1
+          className="heading"
+        >
+          Danza
+        </h1>
+        <p
+          className="subtitle"
+        >
+          Estos son los eventos cerca de ti que tendran lugar en los proximos dias
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    this is the footer
+  </footer>
+</div>
+`;

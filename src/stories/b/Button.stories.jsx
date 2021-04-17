@@ -20,12 +20,14 @@ export default {
   },
 }
 
+/* eslint-disable react/no-children-prop -- needed for the controls */
 export const Base = (props) => [...Array(2)].map((e, i) => (
   <span className={`s${i * 3}`}>
     <Button children="Descubre mas" {...props} className="x-exp3" />
   </span>
 
 ))
+/* eslint-enable react/no-children-prop */
 
 export const Disabled = () => (
   <Button disabled>Indisponible</Button>

@@ -35,19 +35,18 @@ $default-border-radius:2em;
 
 .#{bem.$base}.button {
   @extend %reset-button;
-
-  &::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-  }
   border: $default-border;
-  //border: $default-border;
   border-radius: $default-border-radius;
   color: $default-color;
   cursor: pointer;
 
   font-family: var(--font-paragraph);
   padding: $default-padding;
+
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
 
   &:disabled {
     cursor: unset;
@@ -56,8 +55,8 @@ $default-border-radius:2em;
 
   &.font-heading {
     font-family: var(--font-heading);
-    font-size: calc(var(--s1) *1em);
-    font-weight: bold;
+    font-size: calc(var(--s1) * 1em);
+    font-weight: 600;
     letter-spacing: 0;
     padding: .6em;
     text-transform: unset;

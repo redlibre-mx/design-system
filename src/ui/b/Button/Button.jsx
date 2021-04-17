@@ -25,8 +25,6 @@ const Button = ({
   disabled,
 
   fontHeading,
-
-  important,
 }) => {
   useLayoutEffect(() => {
     import('./styles.scss')
@@ -44,7 +42,6 @@ const Button = ({
         userClassName,
 
         fontHeading && 'font-heading',
-        important && 'important',
       ]
         .filter((e) => e)
         .join(' ')}
@@ -82,6 +79,11 @@ Button.propTypes = {
    *  Whether the button is disabled.
    */
   disabled:PropTypes.bool,
+
+  /**
+   * Whether the button uses the heading font
+   */
+  fontHeading:PropTypes.bool,
 }
 
 Button.defaultProps = {
