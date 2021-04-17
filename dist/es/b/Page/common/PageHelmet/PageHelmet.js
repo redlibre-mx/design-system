@@ -25,15 +25,19 @@ const helmetMap = [{
   })
 }, {
   variables: ['canonical'],
-  render: (v, c) => c.SITE_CANONICAL ? /*#__PURE__*/React.createElement("link", {
-    rel: "canonical",
-    href: `${c.SITE_CANONICAL}${v}`,
-    key: "canonical"
-  }) : /*#__PURE__*/React.createElement("link", {
-    rel: "canonical",
-    href: v,
-    key: "canonical"
-  })
+  render: (v, c) => {
+    var _c$SITE, _c$SITE2;
+
+    return (_c$SITE = c.SITE) !== null && _c$SITE !== void 0 && _c$SITE.CANONICAL ? /*#__PURE__*/React.createElement("link", {
+      rel: "canonical",
+      href: `${(_c$SITE2 = c.SITE) === null || _c$SITE2 === void 0 ? void 0 : _c$SITE2.CANONICAL}${v}`,
+      key: "canonical"
+    }) : /*#__PURE__*/React.createElement("link", {
+      rel: "canonical",
+      href: v,
+      key: "canonical"
+    });
+  }
 }, {
   variables: ['twitter_title', 'title', 'title_tag'],
   render: v => /*#__PURE__*/React.createElement("meta", {
@@ -88,15 +92,19 @@ const helmetMap = [{
   })
 }, {
   variables: ['og_url', 'canonical'],
-  render: (v, c) => c.SITE_CANONICAL ? /*#__PURE__*/React.createElement("meta", {
-    property: "og:url",
-    content: `${c.SITE_CANONICAL}/${v}`,
-    key: "og_url"
-  }) : /*#__PURE__*/React.createElement("meta", {
-    property: "og:url",
-    content: v,
-    key: "og_url"
-  })
+  render: (v, c) => {
+    var _c$SITE3, _c$SITE4;
+
+    return (_c$SITE3 = c.SITE) !== null && _c$SITE3 !== void 0 && _c$SITE3.CANONICAL ? /*#__PURE__*/React.createElement("meta", {
+      property: "og:url",
+      content: `${(_c$SITE4 = c.SITE) === null || _c$SITE4 === void 0 ? void 0 : _c$SITE4.CANONICAL}/${v}`,
+      key: "og_url"
+    }) : /*#__PURE__*/React.createElement("meta", {
+      property: "og:url",
+      content: v,
+      key: "og_url"
+    });
+  }
 }];
 
 const PageHelmet = ({ ...props

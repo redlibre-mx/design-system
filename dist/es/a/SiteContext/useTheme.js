@@ -4,10 +4,9 @@ export default ((initialTheme, storageKey = 'theme') => {
   const [preferredTheme, setPreferredTheme] = useState(initialTheme);
   const [userTheme, setUserTheme] = useState();
   useEffect(() => {
-    const storage = window.localStorage;
-
     if (isClient) {
-      const storedTheme = window.localStorage.getItem(storageKey); // console.log(storedTheme, storedTheme != userTheme)
+      const storage = window.localStorage;
+      const storedTheme = storage.getItem(storageKey); // console.log(storedTheme, storedTheme != userTheme)
 
       if (storedTheme && storedTheme !== userTheme) {
         // console.warn('Theme load')

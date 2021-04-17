@@ -9,10 +9,6 @@ var React = _interopRequireWildcard(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _useTheme = _interopRequireDefault(require("./useTheme"));
-
-var _Context = _interopRequireDefault(require("./Context"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
@@ -25,48 +21,68 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-// Component-level imports
-// Helper Definitions
-var SiteContextProvider = (_ref) => {
+/**
+ * This component is used internally by the `SVG` component
+ * to leverage the `use` tag and read svg sprites.
+ */
+var UseSVG = (_ref) => {
   var {
-    children,
-    initialTheme,
-    config // ...otherProps
-
+    id,
+    className: userClassName,
+    style,
+    sprite,
+    target,
+    source,
+    strokeWidth
   } = _ref;
-  var theme = (0, _useTheme.default)(initialTheme);
-  return /*#__PURE__*/React.createElement(_Context.default.Provider, {
-    value: _objectSpread(_objectSpread({}, config), theme)
-  }, children);
+  return /*#__PURE__*/React.createElement("use", {
+    className: [userClassName].filter(e => e).join(' '),
+    href: source || sprite + (target ? "#".concat(target) : ''),
+    style: strokeWidth ? _objectSpread(_objectSpread({}, style), {}, {
+      '--sw': Number(strokeWidth)
+    }) : {
+      style
+    },
+    id: id
+  });
 };
 
-SiteContextProvider.propTypes = {
+UseSVG.propTypes = {
   /**
-   *  The children JSX
+   * The HTML id for this element
    */
-  children: _propTypes.default.node,
+  id: _propTypes.default.string,
 
   /**
-   * The initial theme for the website. If undefined, fallbacks on system preference.
+   * The HTML class names for this element
    */
-  initialTheme: _propTypes.default.string,
+  className: _propTypes.default.string,
 
   /**
-   * A dictionnary containing settings and preferences to be used site-wide
+   * The React-written, css properties for this element.
    */
-  config: _propTypes.default.shape({
-    SITE: _propTypes.default.shape({
-      NAME: _propTypes.default.string.isRequired,
-      CANONICAL: _propTypes.default.string.isRequired,
-      SUPPORT_EMAIL: _propTypes.default.string,
-      TITLE_SUFFIX: _propTypes.default.string
-    }),
-    SOCIAL: _propTypes.default.shape({
-      FACEBOOK: _propTypes.default.string,
-      INSTAGRAM: _propTypes.default.string,
-      YOUTUBE: _propTypes.default.string
-    })
-  }).isRequired
+  style: _propTypes.default.objectOf(_propTypes.default.string),
+
+  /**
+   * The url to the svg sprite, from the root of the site, for instance : `/myimage.svg`
+   */
+  sprite: _propTypes.default.string,
+
+  /**
+   * The target image id in the sprite
+   */
+  target: _propTypes.default.string,
+
+  /**
+   * The source image in case this is not a sprite
+   */
+  // TODO check if this works
+  source: _propTypes.default.string,
+
+  /**
+   * The SVG property stroke-width
+   */
+  strokeWidth: _propTypes.default.number
 };
-var _default = SiteContextProvider;
+var _default = UseSVG;
 exports.default = _default;

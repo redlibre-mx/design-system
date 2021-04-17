@@ -27,5 +27,13 @@ Object.defineProperty(exports, "useTheme", {
     return _SiteContext.useTheme;
   }
 });
+Object.defineProperty(exports, "SVG", {
+  enumerable: true,
+  get: function get() {
+    return _SVG.SVG;
+  }
+});
 
 var _SiteContext = require("./SiteContext");
+
+var _SVG = require("./SVG");

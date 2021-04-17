@@ -1,2 +1,2 @@
-/* @pareto-engineering/generator-front 0.2.4 */
+/* @pareto-engineering/generator-front 1.0.9 */
 export { default as Button } from "./Button";

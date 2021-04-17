@@ -35,10 +35,17 @@ SiteContextProvider.propTypes = {
    * A dictionnary containing settings and preferences to be used site-wide
    */
   config: PropTypes.shape({
-    SITE_NAME: PropTypes.string.isRequired,
-    SITE_CANONICAL: PropTypes.string.isRequired,
-    FACEBOOK: PropTypes.string,
-    INSTAGRAM: PropTypes.string
+    SITE: PropTypes.shape({
+      NAME: PropTypes.string.isRequired,
+      CANONICAL: PropTypes.string.isRequired,
+      SUPPORT_EMAIL: PropTypes.string,
+      TITLE_SUFFIX: PropTypes.string
+    }),
+    SOCIAL: PropTypes.shape({
+      FACEBOOK: PropTypes.string,
+      INSTAGRAM: PropTypes.string,
+      YOUTUBE: PropTypes.string
+    })
   }).isRequired
 };
 export default SiteContextProvider;

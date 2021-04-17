@@ -13,10 +13,9 @@ var _default = function _default(initialTheme) {
   var [preferredTheme, setPreferredTheme] = (0, _react.useState)(initialTheme);
   var [userTheme, setUserTheme] = (0, _react.useState)();
   (0, _react.useEffect)(() => {
-    var storage = window.localStorage;
-
     if (isClient) {
-      var storedTheme = window.localStorage.getItem(storageKey); // console.log(storedTheme, storedTheme != userTheme)
+      var storage = window.localStorage;
+      var storedTheme = storage.getItem(storageKey); // console.log(storedTheme, storedTheme != userTheme)
 
       if (storedTheme && storedTheme !== userTheme) {
         // console.warn('Theme load')

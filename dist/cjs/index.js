@@ -4,19 +4,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _r = require("./r");
-
-Object.keys(_r).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (key in exports && exports[key] === _r[key]) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function get() {
-      return _r[key];
-    }
-  });
-});
-
 var _a = require("./a");
 
 Object.keys(_a).forEach(function (key) {
@@ -39,6 +26,19 @@ Object.keys(_b).forEach(function (key) {
     enumerable: true,
     get: function get() {
       return _b[key];
+    }
+  });
+});
+
+var _test = require("./test");
+
+Object.keys(_test).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (key in exports && exports[key] === _test[key]) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _test[key];
     }
   });
 });

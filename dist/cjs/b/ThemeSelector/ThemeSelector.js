@@ -11,6 +11,8 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _bem = _interopRequireDefault(require("@redlibre/bem"));
 
+var _a = require("../../a");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
@@ -19,34 +21,43 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 // Local Definitions
 var baseClassName = _bem.default.base;
-var componentClassName = 'button';
+var componentClassName = 'theme-selector';
 /**
  * This is the component description.
  */
 
-var Button = (_ref) => {
+var ThemeSelector = (_ref) => {
   var {
     id,
     className: userClassName,
     style,
-    children,
-    disabled,
-    fontHeading
+    // children
+    themes,
+    iconMap
   } = _ref;
+  var {
+    userTheme,
+    setPreferredTheme
+  } = (0, _a.useSite)();
   (0, React.useLayoutEffect)(() => {
     Promise.resolve().then(() => _interopRequireWildcard(require("./styles.scss")));
   }, []);
+  var loopThemes = (0, React.useCallback)(() => {
+    var current = themes.indexOf(userTheme);
+    setPreferredTheme(themes[(current + 1) % themes.length]);
+  }, [userTheme]);
   return /*#__PURE__*/React.createElement("button", {
     type: "button",
+    className: [baseClassName, componentClassName, userClassName].filter(e => e).join(' '),
     id: id,
-    className: [baseClassName, componentClassName, userClassName, fontHeading && 'font-heading'].filter(e => e).join(' '),
     style: style,
-    disabled: disabled // {...otherProps}
-
-  }, children);
+    onClick: loopThemes
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "v0 m-v icon"
+  }, iconMap[userTheme]));
 };
 
-Button.propTypes = {
+ThemeSelector.propTypes = {
   /**
    * The HTML id for this element
    */
@@ -65,20 +76,26 @@ Button.propTypes = {
   /**
    *  The children JSX
    */
-  children: _propTypes.default.node,
+  // children: PropTypes.node,
 
   /**
-   *  Whether the button is disabled.
+   * The themes and the order in which they appear
    */
-  disabled: _propTypes.default.bool,
+  themes: _propTypes.default.arrayOf(_propTypes.default.string),
 
   /**
-   * Whether the button uses the heading font
+   * A map of the theme names with the icons that represent them. Uses the default font icon.
    */
-  fontHeading: _propTypes.default.bool
+  iconMap: _propTypes.default.objectOf(_propTypes.default.string)
 };
-Button.defaultProps = {
-  disabled: false
+ThemeSelector.defaultProps = {
+  themes: ['light', 'dark'],
+  iconMap: {
+    dark: 'n',
+    // sun,
+    light: 'm' // moon,
+
+  }
 };
-var _default = Button;
+var _default = ThemeSelector;
 exports.default = _default;

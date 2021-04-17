@@ -1,33 +1,34 @@
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-/* @redlibre/generator-front 0.2.4 */
+/* @pareto-engineering/generator-front 1.0.9 */
 import * as React from 'react';
 import { useLayoutEffect } from 'react';
-import PropTypes from 'prop-types'; // Package-level Imports
-
-import styleNames from '@redlibre/bem'; // Component-level imports
-// Helper Definition
+import PropTypes from 'prop-types';
+import styleNames from '@redlibre/bem'; // Local Definitions
 
 const baseClassName = styleNames.base;
 const componentClassName = 'button';
+/**
+ * This is the component description.
+ */
 
 const Button = ({
   id,
   className: userClassName,
   style,
   children,
-  isGhost,
-  ...otherProps
+  disabled,
+  fontHeading
 }) => {
   useLayoutEffect(() => {
     import("./styles.scss");
   }, []);
-  return /*#__PURE__*/React.createElement("button", _extends({
+  return /*#__PURE__*/React.createElement("button", {
+    type: "button",
     id: id,
-    className: [baseClassName, componentClassName, userClassName, isGhost && styleNames.modifierGhost].filter(e => e).join(' '),
+    className: [baseClassName, componentClassName, userClassName, fontHeading && 'font-heading'].filter(e => e).join(' '),
     style: style,
-    type: "button"
-  }, otherProps), children);
+    disabled: disabled // {...otherProps}
+
+  }, children);
 };
 
 Button.propTypes = {
@@ -52,10 +53,16 @@ Button.propTypes = {
   children: PropTypes.node,
 
   /**
-   * Whether the button has the ghost style
+   *  Whether the button is disabled.
    */
-  isGhost: PropTypes.bool
+  disabled: PropTypes.bool,
+
+  /**
+   * Whether the button uses the heading font
+   */
+  fontHeading: PropTypes.bool
 };
-Button.defaultProps = {// someProp:false
+Button.defaultProps = {
+  disabled: false
 };
 export default Button;
