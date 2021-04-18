@@ -1,5 +1,62 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots a/IconList Base 1`] = `
+<ul
+  className="base icon-list"
+  style={
+    Object {
+      "--list-icon": undefined,
+      "--list-icon-hover": undefined,
+    }
+  }
+>
+  <li
+    className="elementItem"
+    style={
+      Object {
+        "--list-icon": "\\"o\\"",
+        "--list-icon-hover": undefined,
+      }
+    }
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </li>
+  <li
+    className="elementItem x-red xh-orange c-x"
+    style={
+      Object {
+        "--list-icon": "\\"f\\"",
+        "--list-icon-hover": undefined,
+      }
+    }
+  >
+    (Colors) Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </li>
+  <li
+    className="elementItem"
+    style={
+      Object {
+        "--list-icon": undefined,
+        "--list-icon-hover": undefined,
+      }
+    }
+  >
+    (No icon) Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </li>
+  <li
+    className="elementItem"
+    style={
+      Object {
+        "--list-icon": "\\"d\\"",
+        "--list-icon-hover": "\\"o\\"",
+      }
+    }
+  >
+    (Icon Hover) Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </li>
+</ul>
+`;
+
 exports[`Storyshots a/SVG Animated 1`] = `
 Array [
   <svg
@@ -633,6 +690,7 @@ Array [
     <button
       className="base button x-success"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -644,6 +702,7 @@ Array [
     <button
       className="base button x-warning"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -655,6 +714,7 @@ Array [
     <button
       className="base button x-error"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -666,6 +726,7 @@ Array [
     <button
       className="base button x-red"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -677,6 +738,7 @@ Array [
     <button
       className="base button x-pink"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -688,6 +750,7 @@ Array [
     <button
       className="base button x-orange"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -699,6 +762,7 @@ Array [
     <button
       className="base button x-yellow"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -710,6 +774,7 @@ Array [
     <button
       className="base button x-green"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -721,6 +786,7 @@ Array [
     <button
       className="base button x-indigo"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -732,6 +798,7 @@ Array [
     <button
       className="base button x-indigo2"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -743,6 +810,7 @@ Array [
     <button
       className="base button x-blue"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -754,6 +822,7 @@ Array [
     <button
       className="base button x-violet"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -765,6 +834,7 @@ Array [
     <button
       className="base button x-clear"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -776,6 +846,7 @@ Array [
     <button
       className="base button x-background"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -787,6 +858,7 @@ Array [
     <button
       className="base button x-heading"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -798,6 +870,7 @@ Array [
     <button
       className="base button x-paragraph"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -809,6 +882,7 @@ Array [
     <button
       className="base button x-subtitle"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -820,6 +894,7 @@ Array [
     <button
       className="base button x-metadata"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -831,6 +906,7 @@ Array [
     <button
       className="base button x-link"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -842,6 +918,7 @@ Array [
     <button
       className="base button x-navlink"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -853,6 +930,7 @@ Array [
     <button
       className="base button x-twitter"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -864,6 +942,7 @@ Array [
     <button
       className="base button x-facebook"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -875,6 +954,7 @@ Array [
     <button
       className="base button x-instagram"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -886,6 +966,7 @@ Array [
     <button
       className="base button x-google"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -897,6 +978,7 @@ Array [
     <button
       className="base button x-black"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -908,6 +990,7 @@ Array [
     <button
       className="base button x-anchor"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -919,6 +1002,7 @@ Array [
     <button
       className="base button x-grey"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -930,6 +1014,7 @@ Array [
     <button
       className="base button x-pearl"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -941,6 +1026,7 @@ Array [
     <button
       className="base button x-white"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -952,6 +1038,7 @@ Array [
     <button
       className="base button x-exp"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -963,6 +1050,7 @@ Array [
     <button
       className="base button x-exp2"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -974,6 +1062,7 @@ Array [
     <button
       className="base button x-exp3"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -985,6 +1074,7 @@ Array [
     <button
       className="base button x-exp4"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -996,6 +1086,7 @@ Array [
     <button
       className="base button x-exp5"
       disabled={false}
+      important={true}
       type="button"
     >
       Reserva Ahora
@@ -1423,6 +1514,197 @@ exports[`Storyshots b/Title With Subtitle 1`] = `
 </div>
 `;
 
+exports[`Storyshots c/ContentSlides Base 1`] = `
+<div
+  className="ui-light"
+  style={
+    Object {
+      "height": "100%",
+    }
+  }
+>
+  <div
+    className="base content-slides y-exp3 u1 md-u2"
+  >
+    <nav
+      className="sidebar"
+    >
+      <header>
+        <div
+          className="base title"
+        >
+          <h1
+            className="heading"
+          >
+            Red Libre
+          </h1>
+        </div>
+      </header>
+      <div
+        className="elementContent"
+      >
+        <ul
+          className="base icon-list"
+          style={
+            Object {
+              "--list-icon": undefined,
+              "--list-icon-hover": undefined,
+            }
+          }
+        >
+          <li
+            className="elementItem x-heading c-x"
+            onClick={false}
+            style={
+              Object {
+                "--list-icon": "\\"l\\"",
+                "--list-icon-hover": undefined,
+              }
+            }
+          >
+            Welcome
+          </li>
+          <li
+            className="elementItem x-subtitle c-x"
+            onClick={false}
+            style={
+              Object {
+                "--list-icon": undefined,
+                "--list-icon-hover": undefined,
+              }
+            }
+          >
+            Choose your plan
+          </li>
+          <li
+            className="elementItem x-subtitle c-x"
+            onClick={false}
+            style={
+              Object {
+                "--list-icon": undefined,
+                "--list-icon-hover": undefined,
+              }
+            }
+          >
+            Personal details
+          </li>
+        </ul>
+      </div>
+      <footer>
+        <button
+          className="base theme-selector x-heading"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="v0 m-v icon"
+          >
+            m
+          </span>
+        </button>
+      </footer>
+    </nav>
+    <div
+      className="horizontal-menu"
+    >
+      test
+    </div>
+    <main>
+      <div
+        className="modifierActive slide"
+      >
+        <img
+          alt=""
+          data-is-current-theme={true}
+          data-themable={true}
+          src="https://images.pexels.com/photos/3396668/pexels-photo-3396668.jpeg?auto=compress&cs=tinysrgb"
+        />
+        <img
+          alt=""
+          data-themable={true}
+          src="https://images.pexels.com/photos/315938/pexels-photo-315938.jpeg?auto=compress&cs=tinysrgb"
+        />
+        <div
+          className="content"
+        >
+          <div
+            className="base title"
+          >
+            <h1
+              className="heading"
+            >
+              Welcome
+            </h1>
+            <p
+              className="subtitle"
+            >
+              Welcome to this site. We hope you will have an amazing experience here.
+            </p>
+          </div>
+          <div
+            className="navigator"
+          >
+            <span />
+            <button
+              className="base button x-success"
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="slide"
+      >
+        <div
+          className="content"
+        >
+          SLIDE 1
+          <div
+            className="navigator"
+          >
+            <span />
+            <button
+              className="base button x-success"
+              disabled={true}
+              onClick={[Function]}
+              type="button"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="slide"
+      >
+        <div
+          className="content"
+        >
+          SLIDE 2
+          <div
+            className="navigator"
+          >
+            <span />
+            <button
+              className="base button x-success"
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+`;
+
 exports[`Storyshots test/Experiment1 Base 1`] = `
 <div
   className="u1 base experiment1"
@@ -1554,12 +1836,12 @@ exports[`Storyshots test/Experiment1 Base 1`] = `
             <p
               className="title"
             >
-              Inverse transitional installation
+              Seamless mobile open architecture
             </p>
             <p
               className="location"
             >
-              Ferryborough
+              Bayleeton
             </p>
           </header>
           <section
@@ -1571,8 +1853,8 @@ exports[`Storyshots test/Experiment1 Base 1`] = `
             />
           </section>
           <main>
-            Qui non voluptatem.
-            Music
+            Et necessitatibus et voluptatum. Eveniet qui in et corporis quo. Fuga adipisci assumenda.
+            Movies
           </main>
         </div>
         <div
@@ -1582,12 +1864,12 @@ exports[`Storyshots test/Experiment1 Base 1`] = `
             <p
               className="title"
             >
-              Digitized context-sensitive concept
+              Pre-emptive non-volatile project
             </p>
             <p
               className="location"
             >
-              Abdulmouth
+              Charleston
             </p>
           </header>
           <section
@@ -1599,8 +1881,8 @@ exports[`Storyshots test/Experiment1 Base 1`] = `
             />
           </section>
           <main>
-            Nihil magni consequatur sit voluptatum exercitationem perferendis sapiente consequatur.
-            Shoes
+            Delectus non dolorem vel ducimus dolor et.
+            Books
           </main>
         </div>
       </div>
@@ -1620,11 +1902,11 @@ exports[`Storyshots test/Experiment1 Base 1`] = `
             <p
               className="title"
             >
-              Inverse transitional installation
+              Seamless mobile open architecture
             </p>
           </header>
           <main>
-            Ferryborough / Music
+            Bayleeton / Movies
           </main>
         </div>
         <div
@@ -1642,11 +1924,11 @@ exports[`Storyshots test/Experiment1 Base 1`] = `
             <p
               className="title"
             >
-              Digitized context-sensitive concept
+              Pre-emptive non-volatile project
             </p>
           </header>
           <main>
-            Abdulmouth / Shoes
+            Charleston / Books
           </main>
         </div>
         <div
@@ -1664,11 +1946,11 @@ exports[`Storyshots test/Experiment1 Base 1`] = `
             <p
               className="title"
             >
-              Implemented empowering emulation
+              Upgradable discrete success
             </p>
           </header>
           <main>
-            Placentia / Outdoors
+            Port Ismael / Computers
           </main>
         </div>
         <div
@@ -1686,11 +1968,11 @@ exports[`Storyshots test/Experiment1 Base 1`] = `
             <p
               className="title"
             >
-              Networked bifurcated capacity
+              Fully-configurable global migration
             </p>
           </header>
           <main>
-            Port Jaylin / Baby
+            Watersport / Outdoors
           </main>
         </div>
         <div
@@ -1708,11 +1990,11 @@ exports[`Storyshots test/Experiment1 Base 1`] = `
             <p
               className="title"
             >
-              Diverse needs-based initiative
+              Diverse even-keeled leverage
             </p>
           </header>
           <main>
-            Spencerport / Clothing
+            Domenickmouth / Music
           </main>
         </div>
       </aside>

@@ -26,7 +26,7 @@ const Navigator = ({
     isFirstStep,
     isLastStep,
     // currentStep,
-    currentStepIndex,
+    // currentStepIndex,
   } = useContentSlides()
 
   return (

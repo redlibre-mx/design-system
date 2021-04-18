@@ -133,11 +133,13 @@ $default-padding:var(--u);
             margin-top: $default-padding;
           }
         }
+
+        /*
         &:not(.#{bem.$modifier-active}) {
         }
 
         &.#{bem.$modifier-active} {
-        }
+        } */
       }
     }
   }

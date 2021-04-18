@@ -53,7 +53,9 @@ const Slide = ({
         .join(' ')}
       style={style}
     >
-      { backgroundMap && Object.keys(backgroundMap).map((themeName) => <img src={backgroundMap[themeName]} key={themeName} data-themable data-is-current-theme={isTheme(themeName)} />) }
+      { backgroundMap && Object.keys(backgroundMap).map((themeName) => (
+        <img src={backgroundMap[themeName]} key={themeName} data-themable data-is-current-theme={isTheme(themeName)} alt="" />
+      )) }
       <div className="content">
         {children}
       </div>

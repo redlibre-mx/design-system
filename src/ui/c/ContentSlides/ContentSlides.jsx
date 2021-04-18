@@ -1,7 +1,7 @@
 /* @pareto-engineering/generator-front 1.0.12 */
 import * as React from 'react'
 
-import { useLayoutEffect, useReducer, useEffect } from 'react'
+import { useLayoutEffect, useReducer } from 'react'
 
 import PropTypes from 'prop-types'
 

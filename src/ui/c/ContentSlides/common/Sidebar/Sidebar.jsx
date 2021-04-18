@@ -61,22 +61,21 @@ const Sidebar = ({
       <div className={styleNames.elementContent}>
         <IconList>
           { steps.map((step, i) => (
+            /* eslint-disable no-nested-ternary -- bc of math inequality cases */
             <IconList.Item
               key={step.location}
               icon={
               (currentStepIndex === i) ? 'l'
-                : (i < currentStepIndex) && 'O'
+                : (i < currentStepIndex) ? 'O' : undefined
             }
               iconHover={
-              (i < currentStepIndex) && 'L'
+                (i < currentStepIndex) ? 'L' : undefined
             }
               className={
               [
-                /* eslint-disable no-nested-ternary -- bc of math inequality cases */
                 (currentStepIndex === i) ? 'x-heading'
                   : (i < currentStepIndex) ? 'pointer x-paragraph xh-link'
                     : 'x-subtitle',
-                /* eslint-enable no-nested-ternary */
                 'c-x',
               ].filter((e) => e).join(' ')
             }
@@ -86,6 +85,7 @@ const Sidebar = ({
             >
               { step.title }
             </IconList.Item>
+            /* eslint-enable no-nested-ternary */
           )) }
         </IconList>
       </div>

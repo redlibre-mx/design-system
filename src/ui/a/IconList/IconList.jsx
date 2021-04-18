@@ -47,7 +47,7 @@ const IconList = ({
         '--list-icon'      :icon && `"${icon}"`,
         '--list-icon-hover':iconHover && `"${iconHover}"`,
       }}
-      // {...otherProps}
+      {...otherProps}
     >
       {children}
     </ul>
