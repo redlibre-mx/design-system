@@ -32,10 +32,12 @@ var _default = function _default(initialTheme) {
       setUserTheme('light');
     }
   }, [preferredTheme, isClient]);
+  var isTheme = (0, _react.useCallback)(theme => userTheme === theme || undefined, [userTheme]);
   return {
     userTheme,
     preferredTheme,
-    setPreferredTheme
+    setPreferredTheme,
+    isTheme
   };
 };
 

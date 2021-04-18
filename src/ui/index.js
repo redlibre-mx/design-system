@@ -1,4 +1,4 @@
 export * from './a'
 export * from './b'
-// export * from './c'
+export * from './c'
 export * from './test'

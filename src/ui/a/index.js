@@ -5,3 +5,4 @@ export {
   useTheme,
 } from './SiteContext'
 export { SVG } from './SVG'
+export { IconList } from './IconList'

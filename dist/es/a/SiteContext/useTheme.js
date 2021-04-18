@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useCallback, useState, useEffect } from 'react';
 export default ((initialTheme, storageKey = 'theme') => {
   const isClient = typeof window === 'object';
   const [preferredTheme, setPreferredTheme] = useState(initialTheme);
@@ -23,9 +23,11 @@ export default ((initialTheme, storageKey = 'theme') => {
       setUserTheme('light');
     }
   }, [preferredTheme, isClient]);
+  const isTheme = useCallback(theme => userTheme === theme || undefined, [userTheme]);
   return {
     userTheme,
     preferredTheme,
-    setPreferredTheme
+    setPreferredTheme,
+    isTheme
   };
 });

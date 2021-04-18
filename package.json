@@ -81,7 +81,7 @@
   "dependencies": {
     "@aztlan/stylebook": "^0.0.3-alpha.1",
     "@redlibre/assets": "^1.1.4",
-    "@redlibre/bem": "^0.0.1",
+    "@redlibre/bem": "^0.0.5",
     "@redlibre/styles": "^0.1.1-alpha.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",

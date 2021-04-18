@@ -1,4 +1,4 @@
-/* @pareto-engineering/generator-front 1.0.9 */
+/* @pareto-engineering/generator-front 1.0.12 */
 import * as React from 'react'
 
 import { useLayoutEffect } from 'react'
@@ -7,24 +7,25 @@ import PropTypes from 'prop-types'
 
 import styleNames from '@redlibre/bem'
 
+import { Item } from './common'
+
 // Local Definitions
 
 const baseClassName = styleNames.base
 
-const componentClassName = 'button'
+const componentClassName = 'icon-list'
 
 /**
  * This is the component description.
  */
-const Button = ({
+const IconList = ({
   id,
   className:userClassName,
   style,
   children,
 
-  disabled,
-
-  fontHeading,
+  icon,
+  iconHover,
   ...otherProps
 }) => {
   useLayoutEffect(() => {
@@ -32,27 +33,28 @@ const Button = ({
   }, [])
 
   return (
-    <button
-      type="button"
+    <ul
       id={id}
       className={[
         baseClassName,
         componentClassName,
         userClassName,
-        fontHeading && 'font-heading',
       ]
         .filter((e) => e)
         .join(' ')}
-      style={style}
-      disabled={disabled}
-      {...otherProps}
+      style={{
+        ...style,
+        '--list-icon'      :icon && `"${icon}"`,
+        '--list-icon-hover':iconHover && `"${iconHover}"`,
+      }}
+      // {...otherProps}
     >
       {children}
-    </button>
+    </ul>
   )
 }
 
-Button.propTypes = {
+IconList.propTypes = {
   /**
    * The HTML id for this element
    */
@@ -74,18 +76,20 @@ Button.propTypes = {
   children:PropTypes.node,
 
   /**
-   *  Whether the button is disabled.
+   * The icon of the list element
    */
-  disabled:PropTypes.bool,
+  icon:PropTypes.string,
 
   /**
-   * Whether the button uses the heading font
+   * The icon of the list element on hover
    */
-  fontHeading:PropTypes.bool,
+  iconHover:PropTypes.string,
 }
 
-Button.defaultProps = {
-  disabled:false,
+IconList.defaultProps = {
+  // someProp:false
 }
 
-export default Button
+IconList.Item = Item
+
+export default IconList

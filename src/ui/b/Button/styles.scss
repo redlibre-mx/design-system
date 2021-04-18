@@ -51,6 +51,10 @@ $default-border-radius:2em;
   &:disabled {
     cursor: unset;
     text-decoration: line-through;
+
+    &:hover {
+      background: unset;
+    }
   }
 
   &.font-heading {

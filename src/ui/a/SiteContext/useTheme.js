@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useCallback, useState, useEffect } from 'react'
 
 export default (
   initialTheme,
@@ -36,9 +36,12 @@ export default (
     }
   }, [preferredTheme, isClient])
 
+  const isTheme = useCallback((theme) => (userTheme === theme) || undefined, [userTheme])
+
   return {
     userTheme,
     preferredTheme,
     setPreferredTheme,
+    isTheme,
   }
 }
