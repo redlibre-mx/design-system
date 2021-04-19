@@ -1588,6 +1588,18 @@ exports[`Storyshots c/ContentSlides Base 1`] = `
           >
             Personal details
           </li>
+          <li
+            className="elementItem x-subtitle c-x"
+            onClick={false}
+            style={
+              Object {
+                "--list-icon": undefined,
+                "--list-icon-hover": undefined,
+              }
+            }
+          >
+            Payment
+          </li>
         </ul>
       </div>
       <footer>
@@ -1617,12 +1629,12 @@ exports[`Storyshots c/ContentSlides Base 1`] = `
           alt=""
           data-is-current-theme={true}
           data-themable={true}
-          src="https://images.pexels.com/photos/3396668/pexels-photo-3396668.jpeg?auto=compress&cs=tinysrgb"
+          src="https://i.imgur.com/mV3u4xV.png"
         />
         <img
           alt=""
           data-themable={true}
-          src="https://images.pexels.com/photos/315938/pexels-photo-315938.jpeg?auto=compress&cs=tinysrgb"
+          src="https://i.imgur.com/PKDyy9c.png"
         />
         <div
           className="content"
@@ -1659,17 +1671,41 @@ exports[`Storyshots c/ContentSlides Base 1`] = `
       <div
         className="slide"
       >
+        <img
+          alt=""
+          data-is-current-theme={true}
+          data-themable={true}
+          src="https://i.imgur.com/WhQ2JPN.png"
+        />
+        <img
+          alt=""
+          data-themable={true}
+          src="https://i.imgur.com/1Hu9c2r.png"
+        />
         <div
           className="content"
         >
-          SLIDE 1
+          <div
+            className="base title"
+          >
+            <h1
+              className="heading"
+            >
+              Parte 2
+            </h1>
+            <p
+              className="subtitle"
+            >
+              Welcome to this site. We hope you will have an amazing experience here.
+            </p>
+          </div>
           <div
             className="navigator"
           >
             <span />
             <button
               className="base button x-success"
-              disabled={true}
+              disabled={false}
               onClick={[Function]}
               type="button"
             >
@@ -1681,10 +1717,80 @@ exports[`Storyshots c/ContentSlides Base 1`] = `
       <div
         className="slide"
       >
+        <img
+          alt=""
+          data-is-current-theme={true}
+          data-themable={true}
+          src="https://i.imgur.com/WS8jeeu.png"
+        />
+        <img
+          alt=""
+          data-themable={true}
+          src="https://i.imgur.com/Um1pkQi.png"
+        />
         <div
           className="content"
         >
-          SLIDE 2
+          <div
+            className="base title"
+          >
+            <h1
+              className="heading"
+            >
+              Parte 3
+            </h1>
+            <p
+              className="subtitle"
+            >
+              Welcome to this site. We hope you will have an amazing experience here.
+            </p>
+          </div>
+          <div
+            className="navigator"
+          >
+            <span />
+            <button
+              className="base button x-success"
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="slide"
+      >
+        <img
+          alt=""
+          data-is-current-theme={true}
+          data-themable={true}
+          src="https://i.imgur.com/PmKKmuf.png"
+        />
+        <img
+          alt=""
+          data-themable={true}
+          src="https://i.imgur.com/IpykAia.png"
+        />
+        <div
+          className="content"
+        >
+          <div
+            className="base title"
+          >
+            <h1
+              className="heading"
+            >
+              Parte 4
+            </h1>
+            <p
+              className="subtitle"
+            >
+              Welcome to this site. We hope you will have an amazing experience here.
+            </p>
+          </div>
           <div
             className="navigator"
           >
@@ -1836,12 +1942,12 @@ exports[`Storyshots test/Experiment1 Base 1`] = `
             <p
               className="title"
             >
-              Seamless mobile open architecture
+              Profit-focused empowering adapter
             </p>
             <p
               className="location"
             >
-              Bayleeton
+              Rivermouth
             </p>
           </header>
           <section
@@ -1853,8 +1959,8 @@ exports[`Storyshots test/Experiment1 Base 1`] = `
             />
           </section>
           <main>
-            Et necessitatibus et voluptatum. Eveniet qui in et corporis quo. Fuga adipisci assumenda.
-            Movies
+            Sint sunt reprehenderit. Voluptatem labore quia totam quisquam adipisci optio molestiae. Sint fugiat maxime repudiandae unde. Sit aliquam qui sint et nisi voluptatem voluptas neque quidem.
+            Jewelery
           </main>
         </div>
         <div
@@ -1864,12 +1970,12 @@ exports[`Storyshots test/Experiment1 Base 1`] = `
             <p
               className="title"
             >
-              Pre-emptive non-volatile project
+              Down-sized client-driven implementation
             </p>
             <p
               className="location"
             >
-              Charleston
+              Hirthechester
             </p>
           </header>
           <section
@@ -1881,8 +1987,8 @@ exports[`Storyshots test/Experiment1 Base 1`] = `
             />
           </section>
           <main>
-            Delectus non dolorem vel ducimus dolor et.
-            Books
+            Est quibusdam nisi commodi dolor fugit voluptatibus. Accusantium dolorum ipsam consequatur consequatur eius nobis. Et sint enim aspernatur voluptatum autem voluptatibus.
+            Computers
           </main>
         </div>
       </div>
@@ -1902,11 +2008,11 @@ exports[`Storyshots test/Experiment1 Base 1`] = `
             <p
               className="title"
             >
-              Seamless mobile open architecture
+              Profit-focused empowering adapter
             </p>
           </header>
           <main>
-            Bayleeton / Movies
+            Rivermouth / Jewelery
           </main>
         </div>
         <div
@@ -1924,11 +2030,11 @@ exports[`Storyshots test/Experiment1 Base 1`] = `
             <p
               className="title"
             >
-              Pre-emptive non-volatile project
+              Down-sized client-driven implementation
             </p>
           </header>
           <main>
-            Charleston / Books
+            Hirthechester / Computers
           </main>
         </div>
         <div
@@ -1946,11 +2052,11 @@ exports[`Storyshots test/Experiment1 Base 1`] = `
             <p
               className="title"
             >
-              Upgradable discrete success
+              Future-proofed directional leverage
             </p>
           </header>
           <main>
-            Port Ismael / Computers
+            Rooseveltfurt / Outdoors
           </main>
         </div>
         <div
@@ -1968,11 +2074,11 @@ exports[`Storyshots test/Experiment1 Base 1`] = `
             <p
               className="title"
             >
-              Fully-configurable global migration
+              Devolved background customer loyalty
             </p>
           </header>
           <main>
-            Watersport / Outdoors
+            Pontiac / Baby
           </main>
         </div>
         <div
@@ -1990,11 +2096,11 @@ exports[`Storyshots test/Experiment1 Base 1`] = `
             <p
               className="title"
             >
-              Diverse even-keeled leverage
+              Cross-platform regional pricing structure
             </p>
           </header>
           <main>
-            Domenickmouth / Music
+            Port Fayeside / Home
           </main>
         </div>
       </aside>

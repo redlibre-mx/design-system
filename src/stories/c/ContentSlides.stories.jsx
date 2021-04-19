@@ -61,13 +61,12 @@ export const Base = () => {
         progress:70,
         location:'personal-details',
       },
-    /*
-    {
-      id      :'payment',
-      title   :'Payment',
-      progress:90,
-      location:'payment',
-    }, */
+      {
+        id      :'payment',
+        title   :'Payment',
+        progress:90,
+        location:'payment',
+      },
     ]
 
     return (
@@ -85,8 +84,8 @@ export const Base = () => {
             <ContentSlides.Slide
               index={0}
               backgroundMap={{
-                light:'https://images.pexels.com/photos/3396668/pexels-photo-3396668.jpeg?auto=compress&cs=tinysrgb',
-                dark :'https://images.pexels.com/photos/315938/pexels-photo-315938.jpeg?auto=compress&cs=tinysrgb',
+                light:'https://i.imgur.com/mV3u4xV.png',
+                dark :'https://i.imgur.com/PKDyy9c.png',
               }}
             >
               <Title
@@ -99,14 +98,44 @@ export const Base = () => {
       >
             <ContentSlides.Slide
               index={1}
+              backgroundMap={{
+                light:'https://i.imgur.com/WhQ2JPN.png',
+                dark :'https://i.imgur.com/1Hu9c2r.png',
+              }}
             >
-              SLIDE 1
-              <ContentSlides.Navigator canMoveForward={false} />
+              <Title
+                heading="Parte 2"
+                headingAs="h1"
+                subtitle="Welcome to this site. We hope you will have an amazing experience here."
+              />
+              <ContentSlides.Navigator />
             </ContentSlides.Slide>
             <ContentSlides.Slide
               index={2}
+              backgroundMap={{
+                light:'https://i.imgur.com/WS8jeeu.png',
+                dark :'https://i.imgur.com/Um1pkQi.png',
+              }}
             >
-              SLIDE 2
+              <Title
+                heading="Parte 3"
+                headingAs="h1"
+                subtitle="Welcome to this site. We hope you will have an amazing experience here."
+              />
+              <ContentSlides.Navigator />
+            </ContentSlides.Slide>
+            <ContentSlides.Slide
+              index={3}
+              backgroundMap={{
+                light:'https://i.imgur.com/PmKKmuf.png',
+                dark :'https://i.imgur.com/IpykAia.png',
+              }}
+            >
+              <Title
+                heading="Parte 4"
+                headingAs="h1"
+                subtitle="Welcome to this site. We hope you will have an amazing experience here."
+              />
               <ContentSlides.Navigator />
             </ContentSlides.Slide>
           </main>
