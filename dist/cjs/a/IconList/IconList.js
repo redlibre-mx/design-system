@@ -11,9 +11,17 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _bem = _interopRequireDefault(require("@redlibre/bem"));
 
+var _common = require("./common");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
@@ -25,35 +33,36 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 
 // Local Definitions
 var baseClassName = _bem.default.base;
-var componentClassName = 'button';
+var componentClassName = 'icon-list';
 /**
  * This is the component description.
  */
 
-var Button = (_ref) => {
+var IconList = (_ref) => {
   var {
     id,
     className: userClassName,
     style,
     children,
-    disabled,
-    fontHeading
+    icon,
+    iconHover
   } = _ref,
-      otherProps = _objectWithoutProperties(_ref, ["id", "className", "style", "children", "disabled", "fontHeading"]);
+      otherProps = _objectWithoutProperties(_ref, ["id", "className", "style", "children", "icon", "iconHover"]);
 
   (0, React.useLayoutEffect)(() => {
     Promise.resolve().then(() => _interopRequireWildcard(require("./styles.scss")));
   }, []);
-  return /*#__PURE__*/React.createElement("button", _extends({
-    type: "button",
+  return /*#__PURE__*/React.createElement("ul", _extends({
     id: id,
-    className: [baseClassName, componentClassName, userClassName, fontHeading && 'font-heading'].filter(e => e).join(' '),
-    style: style,
-    disabled: disabled
+    className: [baseClassName, componentClassName, userClassName].filter(e => e).join(' '),
+    style: _objectSpread(_objectSpread({}, style), {}, {
+      '--list-icon': icon && "\"".concat(icon, "\""),
+      '--list-icon-hover': iconHover && "\"".concat(iconHover, "\"")
+    })
   }, otherProps), children);
 };
 
-Button.propTypes = {
+IconList.propTypes = {
   /**
    * The HTML id for this element
    */
@@ -75,17 +84,17 @@ Button.propTypes = {
   children: _propTypes.default.node,
 
   /**
-   *  Whether the button is disabled.
+   * The icon of the list element
    */
-  disabled: _propTypes.default.bool,
+  icon: _propTypes.default.string,
 
   /**
-   * Whether the button uses the heading font
+   * The icon of the list element on hover
    */
-  fontHeading: _propTypes.default.bool
+  iconHover: _propTypes.default.string
 };
-Button.defaultProps = {
-  disabled: false
+IconList.defaultProps = {// someProp:false
 };
-var _default = Button;
+IconList.Item = _common.Item;
+var _default = IconList;
 exports.default = _default;

@@ -30,6 +30,19 @@ Object.keys(_b).forEach(function (key) {
   });
 });
 
+var _c = require("./c");
+
+Object.keys(_c).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (key in exports && exports[key] === _c[key]) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _c[key];
+    }
+  });
+});
+
 var _test = require("./test");
 
 Object.keys(_test).forEach(function (key) {

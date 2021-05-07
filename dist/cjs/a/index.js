@@ -33,7 +33,15 @@ Object.defineProperty(exports, "SVG", {
     return _SVG.SVG;
   }
 });
+Object.defineProperty(exports, "IconList", {
+  enumerable: true,
+  get: function get() {
+    return _IconList.IconList;
+  }
+});
 
 var _SiteContext = require("./SiteContext");
 
 var _SVG = require("./SVG");
+
+var _IconList = require("./IconList");

@@ -3,11 +3,11 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "TeamGallery", {
+Object.defineProperty(exports, "ContentSlides", {
   enumerable: true,
   get: function get() {
-    return _TeamGallery.TeamGallery;
+    return _ContentSlides.ContentSlides;
   }
 });
 
-var _TeamGallery = require("./TeamGallery");
+var _ContentSlides = require("./ContentSlides");

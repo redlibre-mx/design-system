@@ -1,0 +1,148 @@
+/* @pareto-engineering/generator-front 1.0.12 */
+
+@use "@redlibre/bem";
+@use "@aztlan/stylebook/src/mixins";
+@use "@aztlan/stylebook/src/globals" as *;
+
+$class-sidebar:sidebar;
+$class-horizontal-menu:horizontal-menu;
+$class-slide:slide;
+$class-navigator:navigator;
+
+//$class-main-container:main;
+
+$default-sidebar-width:minmax(250px, 330px);
+$default-border:2px solid var(--grid);
+$default-content-background:var(--y);
+$default-padding:var(--u);
+
+.#{bem.$base}.content-slides {
+  height: 100%;
+
+  .#{$class-sidebar} {
+    background: $default-content-background;
+    border-right: $default-border;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    overflow: auto;
+
+    header,
+    .#{bem.$element-content},
+    footer {
+      padding: $default-padding;
+    }
+
+    header {
+      border-bottom: $default-border;
+    }
+
+    footer {
+      border-top: $default-border;
+    }
+  }
+  .#{$class-horizontal-menu} {
+    background: $default-content-background;
+    border-bottom: $default-border;
+    padding: $default-padding;
+  }
+
+
+  //.#{$class-main-container} {
+  main {
+    background: var(--exp4);
+    position: relative;
+
+    .#{$class-slide} {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: opacity .3s;
+
+      .#{bem.$element-content} {
+        background: $default-content-background;
+        padding: $default-padding;
+      }
+
+      &:not(.#{bem.$modifier-active}) {
+        opacity: .5;
+        z-index: -1;
+      }
+
+      &.#{bem.$modifier-active} {
+        opacity: 1;
+      }
+    }
+  }
+
+  @include mixins.media($to:$sm-md) {
+    display: flex;
+    flex-direction: column;
+
+    .#{$class-sidebar} {
+      display: none;
+    }
+
+    .#{$class-horizontal-menu} {
+      //
+    }
+    //.#{$class-main-container} {
+    main {
+      flex-grow: 1;
+    }
+  }
+
+  @include mixins.media($from:$sm-md) {
+    display: grid;
+    grid-template-columns: $default-sidebar-width 1fr;
+
+    .#{$class-horizontal-menu} {
+      display: none;
+    }
+
+    main {
+      .#{$class-slide} {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        > img {
+          height: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          transition: opacity .3s;
+          width: 100%;
+        }
+
+        .#{bem.$element-content} {
+          border: $default-border;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 600px;
+          position: relative;
+          width: 90%;
+          z-index: 1;
+
+          .#{$class-navigator} {
+            display: flex;
+            justify-content: space-between;
+            margin-top: $default-padding;
+          }
+        }
+
+        /*
+        &:not(.#{bem.$modifier-active}) {
+        }
+
+        &.#{bem.$modifier-active} {
+        } */
+      }
+    }
+  }
+}
+
+

@@ -1,39 +1,41 @@
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
-/* @pareto-engineering/generator-front 1.0.9 */
+/* @pareto-engineering/generator-front 1.0.12 */
 import * as React from 'react';
 import { useLayoutEffect } from 'react';
 import PropTypes from 'prop-types';
-import styleNames from '@redlibre/bem'; // Local Definitions
+import styleNames from '@redlibre/bem';
+import { Item } from "./common"; // Local Definitions
 
 const baseClassName = styleNames.base;
-const componentClassName = 'button';
+const componentClassName = 'icon-list';
 /**
  * This is the component description.
  */
 
-const Button = ({
+const IconList = ({
   id,
   className: userClassName,
   style,
   children,
-  disabled,
-  fontHeading,
+  icon,
+  iconHover,
   ...otherProps
 }) => {
   useLayoutEffect(() => {
     import("./styles.scss");
   }, []);
-  return /*#__PURE__*/React.createElement("button", _extends({
-    type: "button",
+  return /*#__PURE__*/React.createElement("ul", _extends({
     id: id,
-    className: [baseClassName, componentClassName, userClassName, fontHeading && 'font-heading'].filter(e => e).join(' '),
-    style: style,
-    disabled: disabled
+    className: [baseClassName, componentClassName, userClassName].filter(e => e).join(' '),
+    style: { ...style,
+      '--list-icon': icon && `"${icon}"`,
+      '--list-icon-hover': iconHover && `"${iconHover}"`
+    }
   }, otherProps), children);
 };
 
-Button.propTypes = {
+IconList.propTypes = {
   /**
    * The HTML id for this element
    */
@@ -55,16 +57,16 @@ Button.propTypes = {
   children: PropTypes.node,
 
   /**
-   *  Whether the button is disabled.
+   * The icon of the list element
    */
-  disabled: PropTypes.bool,
+  icon: PropTypes.string,
 
   /**
-   * Whether the button uses the heading font
+   * The icon of the list element on hover
    */
-  fontHeading: PropTypes.bool
+  iconHover: PropTypes.string
 };
-Button.defaultProps = {
-  disabled: false
+IconList.defaultProps = {// someProp:false
 };
-export default Button;
+IconList.Item = Item;
+export default IconList;

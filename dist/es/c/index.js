@@ -1,1 +1,1 @@
-export { TeamGallery } from "./TeamGallery";
+export { ContentSlides } from "./ContentSlides";
