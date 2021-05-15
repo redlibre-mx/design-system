@@ -116,7 +116,7 @@ SVG.propTypes = {
   /**
    * An array of targets
    */
-  targets: PropTypes.arrayOf(PropTypes.exact({
+  targets: PropTypes.arrayOf(PropTypes.shape({
     target: PropTypes.string,
     className: PropTypes.number,
     stroke: PropTypes.boolean,

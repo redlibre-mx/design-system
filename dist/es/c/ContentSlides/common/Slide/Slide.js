@@ -39,8 +39,10 @@ const Slide = ({
     "data-is-current-theme": isTheme(themeName),
     alt: ""
   })), /*#__PURE__*/React.createElement("div", {
+    className: "wrapper"
+  }, /*#__PURE__*/React.createElement("div", {
     className: "content"
-  }, children));
+  }, children)));
 };
 
 Slide.propTypes = {

@@ -9,6 +9,12 @@ var React = _interopRequireWildcard(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
+var _bem = _interopRequireDefault(require("@redlibre/bem"));
+
+var _a = require("../../../../a");
+
+var _useContentSlides = _interopRequireDefault(require("../../useContentSlides"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
@@ -27,16 +33,40 @@ var HorizontalMenu = _ref => {
   var {
     id,
     className: userClassName,
-    style,
-    children // ...otherProps
+    style // ...otherProps
 
   } = _ref;
+  var {
+    setPrevStepIndex,
+    // setNextStepIndex,
+    isFirstStep,
+    // isLastStep,
+    currentStep // currentStep,
+    // currentStepIndex,
+
+  } = (0, _useContentSlides.default)();
   return /*#__PURE__*/React.createElement("div", {
     id: id,
     className: [// baseClassName,
     componentClassName, userClassName].filter(e => e).join(' '),
     style: style
-  }, children);
+  }, (currentStep === null || currentStep === void 0 ? void 0 : currentStep.progress) > 0 && /*#__PURE__*/React.createElement(_a.ProgressBar, {
+    progress: currentStep.progress,
+    attached: true,
+    height: ".5em"
+  }), /*#__PURE__*/React.createElement("div", {
+    className: _bem.default.elementContent
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "left"
+  }, !isFirstStep && /*#__PURE__*/React.createElement("span", {
+    className: "pointer",
+    onClick: setPrevStepIndex,
+    role: "button",
+    onKeyDown: setPrevStepIndex,
+    tabIndex: 0
+  }, "<")), /*#__PURE__*/React.createElement("div", {
+    className: "title"
+  }, currentStep === null || currentStep === void 0 ? void 0 : currentStep.title)));
 };
 
 HorizontalMenu.propTypes = {
@@ -53,12 +83,7 @@ HorizontalMenu.propTypes = {
   /**
    * The React-written, css properties for this element.
    */
-  style: _propTypes.default.objectOf(_propTypes.default.string),
-
-  /**
-   *  The children JSX
-   */
-  children: _propTypes.default.node
+  style: _propTypes.default.objectOf(_propTypes.default.string)
 };
 HorizontalMenu.defaultProps = {// someProp:false
 };

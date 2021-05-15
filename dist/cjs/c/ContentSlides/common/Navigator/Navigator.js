@@ -47,10 +47,10 @@ var Navigator = _ref => {
     className: [componentClassName, userClassName].filter(e => e).join(' '),
     style: style
   }, !isFirstStep ? /*#__PURE__*/React.createElement(_b.Button, {
-    className: "x-warning",
+    className: "x-warning prev",
     onClick: () => setPrevStepIndex()
   }, "Prev") : /*#__PURE__*/React.createElement("span", null), !isLastStep ? /*#__PURE__*/React.createElement(_b.Button, {
-    className: "x-success",
+    className: "x-success next",
     disabled: !canMoveForward,
     onClick: () => setNextStepIndex()
   }, "Next") : /*#__PURE__*/React.createElement("span", null));
