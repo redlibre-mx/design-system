@@ -2,6 +2,7 @@
 import * as React from 'react'
 
 import PropTypes from 'prop-types'
+import useContentSlides from '../../useContentSlides'
 
 // Local Definitions
 
@@ -18,23 +19,54 @@ const HorizontalMenu = ({
   style,
   children,
   // ...otherProps
-}) => (
-  <div
-    id={id}
-    className={[
+}) => {
+  const {
+    setPrevStepIndex,
+    setNextStepIndex,
+    isFirstStep,
+    isLastStep,
+    currentStep,
+    // currentStep,
+    // currentStepIndex,
+  } = useContentSlides()
+  return (
+    <div
+      id={id}
+      className={[
 
-      // baseClassName,
+        // baseClassName,
 
-      componentClassName,
-      userClassName,
-    ]
-      .filter((e) => e)
-      .join(' ')}
-    style={style}
-  >
-    {children}
-  </div>
-)
+        componentClassName,
+        userClassName,
+      ]
+        .filter((e) => e)
+        .join(' ')}
+      style={style}
+    >
+      <div className="left">
+        { !isFirstStep
+        && (
+        <span className="pointer" onClick={setPrevStepIndex}>
+          &lt;
+        </span>
+        )}
+      </div>
+      <div className="title">
+        { currentStep?.title }
+      </div>
+      {/*
+      <div className="right">
+        { !isLastStep
+        && (
+        <span className="pointer" onClick={setNextStepIndex}>
+          &gt;
+        </span>
+        )}
+      </div>
+      */}
+    </div>
+  )
+}
 
 HorizontalMenu.propTypes = {
   /**

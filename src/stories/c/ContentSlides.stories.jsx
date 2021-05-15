@@ -77,9 +77,7 @@ export const Base = () => {
               <Title heading="Red Libre" />
             )}
           />
-          <ContentSlides.HorizontalMenu>
-            test
-          </ContentSlides.HorizontalMenu>
+          <ContentSlides.HorizontalMenu />
           <main>
             <ContentSlides.Slide
               index={0}
@@ -108,6 +106,8 @@ export const Base = () => {
                 headingAs="h1"
                 subtitle="Welcome to this site. We hope you will have an amazing experience here."
               />
+              <p>In ut sollicitudin elit. Maecenas tempor ex aliquet enim egestas, non sollicitudin mi tempor. Pellentesque fermentum, massa in cursus faucibus, enim tortor fringilla ligula, sit amet tincidunt neque orci et tellus. Nam dignissim tristique justo. Cras nulla sem, dictum pellentesque libero eget, porta placerat leo. Donec scelerisque enim risus, in pharetra purus fringilla eu. Cras placerat ac enim viverra rhoncus. Cras sagittis euismod orci eget aliquam. Nulla et mi non enim aliquam consequat. Cras volutpat porta convallis. Mauris ullamcorper vitae sapien ac rhoncus. Nullam vel porttitor mi, ut vestibulum arcu. </p>
+
               <ContentSlides.Navigator />
             </ContentSlides.Slide>
             <ContentSlides.Slide

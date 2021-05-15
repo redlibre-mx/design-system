@@ -43,7 +43,7 @@ const Navigator = ({
       { !isFirstStep
         ? (
           <Button
-            className="x-warning"
+            className="x-warning prev"
             onClick={() => setPrevStepIndex()}
           >
             Prev
@@ -54,7 +54,7 @@ const Navigator = ({
       { !isLastStep
         ? (
           <Button
-            className="x-success"
+            className="x-success next"
             disabled={!canMoveForward}
             onClick={() => setNextStepIndex()}
           >
