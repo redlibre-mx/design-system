@@ -44,10 +44,10 @@ export const Attached = () => {
       <ProgressBar attached progress={progress} />
       <div style={{ padding: '1em' }}>
         <h3>Use the buttons to modify the value</h3>
-        <button onClick={() => reduce(25)}>
+        <button onClick={() => reduce(25)} type="button">
           Less
         </button>
-        <button onClick={() => augment(25)}>
+        <button onClick={() => augment(25)} type="button">
           More
         </button>
       </div>

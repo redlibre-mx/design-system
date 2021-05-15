@@ -57,6 +57,89 @@ exports[`Storyshots a/IconList Base 1`] = `
 </ul>
 `;
 
+exports[`Storyshots a/ProgressBar Attached 1`] = `
+<div
+  style={
+    Object {
+      "border": "2px solid var(--grid)",
+    }
+  }
+>
+  <div
+    className="base progress-bar modifierAttached"
+    data-length="50%"
+    style={
+      Object {
+        "--height": undefined,
+        "--progress": 40,
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "padding": "1em",
+      }
+    }
+  >
+    <h3>
+      Use the buttons to modify the value
+    </h3>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Less
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      More
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots a/ProgressBar Base 1`] = `
+<div
+  className="base progress-bar"
+  data-length="50%"
+  style={
+    Object {
+      "--height": undefined,
+      "--progress": 70,
+    }
+  }
+/>
+`;
+
+exports[`Storyshots a/ProgressBar Color 1`] = `
+<div
+  className="base progress-bar x-orange"
+  data-length="50%"
+  style={
+    Object {
+      "--height": undefined,
+      "--progress": 70,
+    }
+  }
+/>
+`;
+
+exports[`Storyshots a/ProgressBar Height 1`] = `
+<div
+  className="base progress-bar"
+  data-length="50%"
+  style={
+    Object {
+      "--height": "5em",
+      "--progress": 62,
+    }
+  }
+/>
+`;
+
 exports[`Storyshots a/SVG Animated 1`] = `
 Array [
   <svg
@@ -1619,7 +1702,28 @@ exports[`Storyshots c/ContentSlides Base 1`] = `
     <div
       className="horizontal-menu"
     >
-      test
+      <div
+        className="base progress-bar modifierAttached"
+        data-length="50%"
+        style={
+          Object {
+            "--height": ".5em",
+            "--progress": 40,
+          }
+        }
+      />
+      <div
+        className="elementContent"
+      >
+        <div
+          className="left"
+        />
+        <div
+          className="title"
+        >
+          Welcome
+        </div>
+      </div>
     </div>
     <main>
       <div
@@ -1637,34 +1741,38 @@ exports[`Storyshots c/ContentSlides Base 1`] = `
           src="https://i.imgur.com/PKDyy9c.png"
         />
         <div
-          className="content"
+          className="wrapper"
         >
           <div
-            className="base title"
+            className="content"
           >
-            <h1
-              className="heading"
+            <div
+              className="base title"
             >
-              Welcome
-            </h1>
-            <p
-              className="subtitle"
+              <h1
+                className="heading"
+              >
+                Welcome
+              </h1>
+              <p
+                className="subtitle"
+              >
+                Welcome to this site. We hope you will have an amazing experience here.
+              </p>
+            </div>
+            <div
+              className="navigator"
             >
-              Welcome to this site. We hope you will have an amazing experience here.
-            </p>
-          </div>
-          <div
-            className="navigator"
-          >
-            <span />
-            <button
-              className="base button x-success"
-              disabled={false}
-              onClick={[Function]}
-              type="button"
-            >
-              Next
-            </button>
+              <span />
+              <button
+                className="base button x-success next"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                Next
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -1683,34 +1791,42 @@ exports[`Storyshots c/ContentSlides Base 1`] = `
           src="https://i.imgur.com/1Hu9c2r.png"
         />
         <div
-          className="content"
+          className="wrapper"
         >
           <div
-            className="base title"
+            className="content"
           >
-            <h1
-              className="heading"
+            <div
+              className="base title"
             >
-              Parte 2
-            </h1>
-            <p
-              className="subtitle"
-            >
-              Welcome to this site. We hope you will have an amazing experience here.
+              <h1
+                className="heading"
+              >
+                Parte 2
+              </h1>
+              <p
+                className="subtitle"
+              >
+                Welcome to this site. We hope you will have an amazing experience here.
+              </p>
+            </div>
+            <p>
+              In ut sollicitudin elit. Maecenas tempor ex aliquet enim egestas, non sollicitudin mi tempor. Pellentesque fermentum, massa in cursus faucibus, enim tortor fringilla ligula, sit amet tincidunt neque orci et tellus. Nam dignissim tristique justo. Cras nulla sem, dictum pellentesque libero eget, porta placerat leo. Donec scelerisque enim risus, in pharetra purus fringilla eu. Cras placerat ac enim viverra rhoncus. Cras sagittis euismod orci eget aliquam. Nulla et mi non enim aliquam consequat. Cras volutpat porta convallis. Mauris ullamcorper vitae sapien ac rhoncus. Nullam vel porttitor mi, ut vestibulum arcu.
+               
             </p>
-          </div>
-          <div
-            className="navigator"
-          >
-            <span />
-            <button
-              className="base button x-success"
-              disabled={false}
-              onClick={[Function]}
-              type="button"
+            <div
+              className="navigator"
             >
-              Next
-            </button>
+              <span />
+              <button
+                className="base button x-success next"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                Next
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -1729,34 +1845,38 @@ exports[`Storyshots c/ContentSlides Base 1`] = `
           src="https://i.imgur.com/Um1pkQi.png"
         />
         <div
-          className="content"
+          className="wrapper"
         >
           <div
-            className="base title"
+            className="content"
           >
-            <h1
-              className="heading"
+            <div
+              className="base title"
             >
-              Parte 3
-            </h1>
-            <p
-              className="subtitle"
+              <h1
+                className="heading"
+              >
+                Parte 3
+              </h1>
+              <p
+                className="subtitle"
+              >
+                Welcome to this site. We hope you will have an amazing experience here.
+              </p>
+            </div>
+            <div
+              className="navigator"
             >
-              Welcome to this site. We hope you will have an amazing experience here.
-            </p>
-          </div>
-          <div
-            className="navigator"
-          >
-            <span />
-            <button
-              className="base button x-success"
-              disabled={false}
-              onClick={[Function]}
-              type="button"
-            >
-              Next
-            </button>
+              <span />
+              <button
+                className="base button x-success next"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                Next
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -1775,34 +1895,38 @@ exports[`Storyshots c/ContentSlides Base 1`] = `
           src="https://i.imgur.com/IpykAia.png"
         />
         <div
-          className="content"
+          className="wrapper"
         >
           <div
-            className="base title"
+            className="content"
           >
-            <h1
-              className="heading"
+            <div
+              className="base title"
             >
-              Parte 4
-            </h1>
-            <p
-              className="subtitle"
+              <h1
+                className="heading"
+              >
+                Parte 4
+              </h1>
+              <p
+                className="subtitle"
+              >
+                Welcome to this site. We hope you will have an amazing experience here.
+              </p>
+            </div>
+            <div
+              className="navigator"
             >
-              Welcome to this site. We hope you will have an amazing experience here.
-            </p>
-          </div>
-          <div
-            className="navigator"
-          >
-            <span />
-            <button
-              className="base button x-success"
-              disabled={false}
-              onClick={[Function]}
-              type="button"
-            >
-              Next
-            </button>
+              <span />
+              <button
+                className="base button x-success next"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                Next
+              </button>
+            </div>
           </div>
         </div>
       </div>

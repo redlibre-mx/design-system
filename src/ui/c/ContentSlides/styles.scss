@@ -44,6 +44,7 @@ $mobile-content-margin:6em;
       border-top: $default-border;
     }
 
+    /* stylelint-disable selector-max-compound-selectors -- Required here  */
     .#{bem.$element-content} {
       .icon-list {
         .#{bem.$element-item} {
@@ -53,6 +54,7 @@ $mobile-content-margin:6em;
         }
       }
     }
+    /* stylelint-enable selector-max-compound-selectors */
   }
   .#{$class-horizontal-menu} {
     background: $default-content-background;
@@ -156,6 +158,9 @@ $mobile-content-margin:6em;
           width: 100%;
         }
 
+        /* stylelint-disable selector-max-compound-selectors -- Required here  */
+        /* stylelint-disable max-nesting-depth -- Required here  */
+        /* stylelint-disable scss/media-feature-value-dollar-variable -- For orientation mq */
         .wrapper {
           display: flex;
           flex-direction: column;
@@ -205,6 +210,7 @@ $mobile-content-margin:6em;
             }
           }
         }
+        /* stylelint-enable */
 
         /*
         &:not(.#{bem.$modifier-active}) {

@@ -19,14 +19,13 @@ const HorizontalMenu = ({
   id,
   className:userClassName,
   style,
-  children,
   // ...otherProps
 }) => {
   const {
     setPrevStepIndex,
-    setNextStepIndex,
+    // setNextStepIndex,
     isFirstStep,
-    isLastStep,
+    // isLastStep,
     currentStep,
     // currentStep,
     // currentStepIndex,
@@ -53,7 +52,7 @@ const HorizontalMenu = ({
         <div className="left">
           { !isFirstStep
         && (
-        <span className="pointer" onClick={setPrevStepIndex}>
+        <span className="pointer" onClick={setPrevStepIndex} role="button" onKeyDown={setPrevStepIndex} tabIndex={0}>
           &lt;
         </span>
         )}
@@ -91,11 +90,6 @@ HorizontalMenu.propTypes = {
    * The React-written, css properties for this element.
    */
   style:PropTypes.objectOf(PropTypes.string),
-
-  /**
-   *  The children JSX
-   */
-  children:PropTypes.node,
 }
 
 HorizontalMenu.defaultProps = {
