@@ -80,7 +80,7 @@
   "dependencies": {
     "@aztlan/stylebook": "^0.1.0",
     "@redlibre/assets": "^1.1.7",
-    "@redlibre/bem": "^0.0.5",
+    "@redlibre/bem": "^0.0.6",
     "@redlibre/styles": "^0.1.1",
     "prop-types": "^15.7.2",
     "faker": "^5.5.3",

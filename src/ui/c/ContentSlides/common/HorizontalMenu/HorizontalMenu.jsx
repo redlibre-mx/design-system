@@ -2,6 +2,8 @@
 import * as React from 'react'
 
 import PropTypes from 'prop-types'
+import styleNames from '@redlibre/bem'
+import { ProgressBar } from 'ui/a'
 import useContentSlides from '../../useContentSlides'
 
 // Local Definitions
@@ -43,18 +45,23 @@ const HorizontalMenu = ({
         .join(' ')}
       style={style}
     >
-      <div className="left">
-        { !isFirstStep
+      {
+        (currentStep?.progress > 0)
+      && <ProgressBar progress={currentStep.progress} attached height=".5em" />
+      }
+      <div className={styleNames.elementContent}>
+        <div className="left">
+          { !isFirstStep
         && (
         <span className="pointer" onClick={setPrevStepIndex}>
           &lt;
         </span>
         )}
-      </div>
-      <div className="title">
-        { currentStep?.title }
-      </div>
-      {/*
+        </div>
+        <div className="title">
+          { currentStep?.title }
+        </div>
+        {/*
       <div className="right">
         { !isLastStep
         && (
@@ -64,6 +71,7 @@ const HorizontalMenu = ({
         )}
       </div>
       */}
+      </div>
     </div>
   )
 }

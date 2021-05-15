@@ -7,18 +7,29 @@ import {
   uiMap ,
   smMap,
   monochromeMap,
-  experimentalMap
+  experimentalMap,
+  allLetters,
 } from './helpers';
+
 
 <Meta title="StyleGuide/IconGallery" />
 
 # Icons
 
-The icons are defined in [@redlibre/assets/fonts/icons.woff](https://github.com/redlibre-mx/assets/tree/master/fonts), imported in [@redlibre/styles](https://github.com/redlibre-mx/styles/blob/master/src/stylebook.scss).
+The icons are defined in [@redlibre/assets/fonts/icons.woff](https://github.com/redlibre-mx/assets/tree/master/fonts), imported in [@redlibre/styles/src/stylebook.scss](https://github.com/redlibre-mx/styles/blob/master/src/stylebook.scss).
 
 To add more fonts, connect to [glyphter](https://glyphter.com).
 
-## Colorschemes
-
-Color are collections of colors that put together, make a UI theme.
+<div style={{ display:'grid', 'grid-template-columns':'repeat(auto-fill, minmax(100px, 150px))' }}>
+{ allLetters.map(letter => 
+<div>
+<div style={{ textAlign:'center', padding:'.5em', fontWeight:'bold', outline:'1px solid #DCDCDC', color:'#ACACAC' }}>
+{ letter }
+</div>
+<div style={{ outline:'1px solid #DCDCDC', padding:'2em', 'text-align':'center', 'font-family':'icons', 'font-size':'2em' }}>
+{ letter }
+</div>
+</div>
+) }
+</div>
 
