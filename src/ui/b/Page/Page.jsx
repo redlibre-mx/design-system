@@ -1,6 +1,6 @@
 /* @redlibre/generator-front 1.0.0 */
 import * as React from 'react'
-import { useEffect } from 'react'
+import { useLayoutEffect, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import styleNames from '@redlibre/bem'
 
@@ -29,6 +29,10 @@ const Page = ({
   helmetProps,
   ...otherProps
 }) => {
+  useLayoutEffect(() => {
+    import('./styles.scss')
+  }, [])
+
   useEffect(() => {
     // If we're on the client, we make sure to scroll up when the page loads
     // This is a necessary transform to make react apt for website pages
