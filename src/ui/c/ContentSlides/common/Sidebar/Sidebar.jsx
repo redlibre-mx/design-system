@@ -92,8 +92,8 @@ const Sidebar = ({
       { (footer || true)
         ? (
           <footer>
+            <ThemeSelector color="heading" isText className="v1 mb-v" />
             {footer}
-            <ThemeSelector className="x-heading" isText textMap={{ dark: 'mysterious' }} />
           </footer>
         )
         : <span />}

@@ -33,6 +33,7 @@ var ThemeSelector = _ref => {
     style,
     // children
     color,
+    colorHover,
     themes,
     iconMap,
     textMap,
@@ -54,7 +55,7 @@ var ThemeSelector = _ref => {
   }, [userTheme, themes]);
   return /*#__PURE__*/React.createElement("button", {
     type: "button",
-    className: [baseClassName, componentClassName, userClassName, "x-".concat(color)].filter(e => e).join(' '),
+    className: [baseClassName, componentClassName, userClassName, "x-".concat(color), colorHover && "xh-".concat(colorHover)].filter(e => e).join(' '),
     id: id,
     style: style,
     onClick: loopThemes
@@ -103,6 +104,11 @@ ThemeSelector.propTypes = {
    * The color of the component.
    */
   color: _propTypes.default.string,
+
+  /**
+   * The color of the component on hover.
+   */
+  colorHover: _propTypes.default.string,
 
   /**
    * Whether to display text instead of icons

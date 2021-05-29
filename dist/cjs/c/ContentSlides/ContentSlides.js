@@ -125,6 +125,13 @@ var ContentSlides = _ref => {
   (0, React.useLayoutEffect)(() => {
     setCurrentStep(currentStepIndex);
   }, [currentStepIndex]);
+  (0, React.useLayoutEffect)(() => {
+    var requestedStepIndex = steps.findIndex(e => e.location === history.location.pathname);
+
+    if (requestedStepIndex !== currentStepIndex) {
+      setCurrentStep(requestedStepIndex);
+    }
+  }, [history.location]);
   return /*#__PURE__*/React.createElement(_Context.default.Provider, {
     value: _objectSpread({
       steps,

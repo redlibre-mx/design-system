@@ -22,6 +22,7 @@ const ThemeSelector = ({
   // children
 
   color,
+  colorHover,
   themes,
   iconMap,
   textMap,
@@ -55,6 +56,7 @@ const ThemeSelector = ({
         componentClassName,
         userClassName,
         `x-${color}`,
+        colorHover && `xh-${colorHover}`,
       ]
         .filter((e) => e)
         .join(' ')}
@@ -116,6 +118,11 @@ ThemeSelector.propTypes = {
    * The color of the component.
    */
   color:PropTypes.string,
+
+  /**
+   * The color of the component on hover.
+   */
+  colorHover:PropTypes.string,
 
   /**
    * Whether to display text instead of icons

@@ -69,13 +69,11 @@ var Sidebar = _ref => {
     onClick: i < currentStepIndex && (() => setStepIndex(i))
   }, step.title)
   /* eslint-enable no-nested-ternary */
-  ))), footer || true ? /*#__PURE__*/React.createElement("footer", null, footer, /*#__PURE__*/React.createElement(_b.ThemeSelector, {
-    className: "x-heading",
+  ))), footer || true ? /*#__PURE__*/React.createElement("footer", null, /*#__PURE__*/React.createElement(_b.ThemeSelector, {
+    color: "heading",
     isText: true,
-    textMap: {
-      dark: 'mysterious'
-    }
-  })) : /*#__PURE__*/React.createElement("span", null));
+    className: "v1 mb-v"
+  }), footer) : /*#__PURE__*/React.createElement("span", null));
 };
 
 Sidebar.propTypes = {

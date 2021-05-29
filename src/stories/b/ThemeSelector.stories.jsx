@@ -68,7 +68,7 @@ export const Text = () => {
           Theme :
           { userTheme }
         </p>
-        <ThemeSelector color="link" isText />
+        <ThemeSelector className="x-heading" isText textMap={{ dark: 'mysterious' }} />
       </div>
     )
   }

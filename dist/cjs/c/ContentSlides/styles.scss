@@ -30,7 +30,10 @@ $mobile-content-margin:6em;
     justify-content: space-between;
     overflow: auto;
 
-    header,
+    header {
+      padding: calc(#{$default-padding} / 2) $default-padding;
+    }
+
     .#{bem.$element-content},
     footer {
       padding: $default-padding;
