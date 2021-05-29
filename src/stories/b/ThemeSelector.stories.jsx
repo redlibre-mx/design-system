@@ -43,7 +43,32 @@ export const Base = () => {
           Theme :
           { userTheme }
         </p>
-        <ThemeSelector />
+        <ThemeSelector color="link" />
+      </div>
+    )
+  }
+  return (
+    <ChildCo />
+  )
+}
+
+export const Text = () => {
+  const ChildCo = () => {
+    const { userTheme } = useSite()
+    return (
+      <div
+        className={
+         [
+           `ui-${userTheme}`,
+           'y-background b-y',
+         ].filter((e) => e).join(' ')
+       }
+      >
+        <p>
+          Theme :
+          { userTheme }
+        </p>
+        <ThemeSelector color="link" isText />
       </div>
     )
   }

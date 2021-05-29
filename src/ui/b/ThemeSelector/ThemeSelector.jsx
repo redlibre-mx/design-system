@@ -1,6 +1,6 @@
 /* @pareto-engineering/generator-front 1.0.12 */
 import * as React from 'react'
-import { useLayoutEffect, useCallback } from 'react'
+import { useMemo, useLayoutEffect, useCallback } from 'react'
 import PropTypes from 'prop-types'
 import styleNames from '@redlibre/bem'
 
@@ -21,8 +21,10 @@ const ThemeSelector = ({
   style,
   // children
 
+  color,
   themes,
   iconMap,
+  isText,
 }) => {
   const {
     userTheme,
@@ -33,11 +35,16 @@ const ThemeSelector = ({
     import('./styles.scss')
   }, [])
 
-  const loopThemes = useCallback(() => {
+  const nextTheme = useMemo(() => {
     const current = themes.indexOf(userTheme)
-    setPreferredTheme(themes[(current + 1) % themes.length])
+    return themes[(current + 1) % themes.length]
   },
-  [userTheme])
+  [userTheme, themes])
+
+  const loopThemes = useCallback(() => {
+    setPreferredTheme(nextTheme)
+  },
+  [userTheme, themes])
 
   return (
     <button
@@ -46,6 +53,7 @@ const ThemeSelector = ({
         baseClassName,
         componentClassName,
         userClassName,
+        `x-${color}`,
       ]
         .filter((e) => e)
         .join(' ')}
@@ -53,8 +61,15 @@ const ThemeSelector = ({
       style={style}
       onClick={loopThemes}
     >
-      <span className="v0 m-v icon">
-        { iconMap[userTheme] }
+      <span className={
+        [
+          'v0 m-v',
+          isText ? 'f-paragraph' : 'icon',
+        ].filter(Boolean).join(' ')
+        }
+      >
+        { isText ? nextTheme
+          : iconMap[userTheme] }
       </span>
     </button>
   )
@@ -91,6 +106,16 @@ ThemeSelector.propTypes = {
    */
   iconMap:PropTypes.objectOf(PropTypes.string),
 
+  /**
+   * The color of the component.
+   */
+  color:PropTypes.string,
+
+  /**
+   * Whether to display text instead of icons
+   */
+  isText:PropTypes.bool,
+
 }
 
 ThemeSelector.defaultProps = {
@@ -99,6 +124,8 @@ ThemeSelector.defaultProps = {
     dark :'n', // sun,
     light:'m', // moon,
   },
+  color :'paragraph',
+  isText:false,
 }
 
 export default ThemeSelector
