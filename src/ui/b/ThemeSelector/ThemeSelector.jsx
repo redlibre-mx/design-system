@@ -24,6 +24,7 @@ const ThemeSelector = ({
   color,
   themes,
   iconMap,
+  textMap,
   isText,
 }) => {
   const {
@@ -68,7 +69,7 @@ const ThemeSelector = ({
         ].filter(Boolean).join(' ')
         }
       >
-        { isText ? nextTheme
+        { isText ? textMap[nextTheme] || nextTheme
           : iconMap[userTheme] }
       </span>
     </button>
@@ -107,6 +108,11 @@ ThemeSelector.propTypes = {
   iconMap:PropTypes.objectOf(PropTypes.string),
 
   /**
+   * A map of the theme names with the text that represent them.
+   */
+  textMap:PropTypes.objectOf(PropTypes.string),
+
+  /**
    * The color of the component.
    */
   color:PropTypes.string,
@@ -124,8 +130,12 @@ ThemeSelector.defaultProps = {
     dark :'n', // sun,
     light:'m', // moon,
   },
-  color :'paragraph',
-  isText:false,
+  color  :'paragraph',
+  isText :false,
+  textMap:{
+    light:'Claro',
+    dark :'Oscuro',
+  },
 }
 
 export default ThemeSelector

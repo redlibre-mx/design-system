@@ -1442,13 +1442,34 @@ exports[`Storyshots b/ThemeSelector Base 1`] = `
     Theme :
   </p>
   <button
-    className="base theme-selector"
+    className="base theme-selector x-link"
     onClick={[Function]}
     type="button"
   >
     <span
       className="v0 m-v icon"
     />
+  </button>
+</div>
+`;
+
+exports[`Storyshots b/ThemeSelector Text 1`] = `
+<div
+  className="ui-undefined y-background b-y"
+>
+  <p>
+    Theme :
+  </p>
+  <button
+    className="base theme-selector x-link"
+    onClick={[Function]}
+    type="button"
+  >
+    <span
+      className="v0 m-v f-paragraph"
+    >
+      light
+    </span>
   </button>
 </div>
 `;
@@ -1687,7 +1708,7 @@ exports[`Storyshots c/ContentSlides Base 1`] = `
       </div>
       <footer>
         <button
-          className="base theme-selector x-heading"
+          className="base theme-selector x-heading x-paragraph"
           onClick={[Function]}
           type="button"
         >
