@@ -1,6 +1,6 @@
 {
   "name": "@redlibre/design-system",
-  "version": "0.0.2-alpha.3",
+  "version": "0.0.2-alpha.4",
   "description": "",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
