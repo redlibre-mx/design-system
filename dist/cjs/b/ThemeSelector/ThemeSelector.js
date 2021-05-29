@@ -32,8 +32,11 @@ var ThemeSelector = _ref => {
     className: userClassName,
     style,
     // children
+    color,
     themes,
-    iconMap
+    iconMap,
+    textMap,
+    isText
   } = _ref;
   var {
     userTheme,
@@ -42,19 +45,22 @@ var ThemeSelector = _ref => {
   (0, React.useLayoutEffect)(() => {
     Promise.resolve().then(() => _interopRequireWildcard(require("./styles.scss")));
   }, []);
-  var loopThemes = (0, React.useCallback)(() => {
+  var nextTheme = (0, React.useMemo)(() => {
     var current = themes.indexOf(userTheme);
-    setPreferredTheme(themes[(current + 1) % themes.length]);
-  }, [userTheme]);
+    return themes[(current + 1) % themes.length];
+  }, [userTheme, themes]);
+  var loopThemes = (0, React.useCallback)(() => {
+    setPreferredTheme(nextTheme);
+  }, [userTheme, themes]);
   return /*#__PURE__*/React.createElement("button", {
     type: "button",
-    className: [baseClassName, componentClassName, userClassName].filter(e => e).join(' '),
+    className: [baseClassName, componentClassName, userClassName, "x-".concat(color)].filter(e => e).join(' '),
     id: id,
     style: style,
     onClick: loopThemes
   }, /*#__PURE__*/React.createElement("span", {
-    className: "v0 m-v icon"
-  }, iconMap[userTheme]));
+    className: ['v0 m-v', isText ? 'f-paragraph' : 'icon'].filter(Boolean).join(' ')
+  }, isText ? textMap[nextTheme] || nextTheme : iconMap[userTheme]));
 };
 
 ThemeSelector.propTypes = {
@@ -86,7 +92,22 @@ ThemeSelector.propTypes = {
   /**
    * A map of the theme names with the icons that represent them. Uses the default font icon.
    */
-  iconMap: _propTypes.default.objectOf(_propTypes.default.string)
+  iconMap: _propTypes.default.objectOf(_propTypes.default.string),
+
+  /**
+   * A map of the theme names with the text that represent them.
+   */
+  textMap: _propTypes.default.objectOf(_propTypes.default.string),
+
+  /**
+   * The color of the component.
+   */
+  color: _propTypes.default.string,
+
+  /**
+   * Whether to display text instead of icons
+   */
+  isText: _propTypes.default.bool
 };
 ThemeSelector.defaultProps = {
   themes: ['light', 'dark'],
@@ -95,6 +116,12 @@ ThemeSelector.defaultProps = {
     // sun,
     light: 'm' // moon,
 
+  },
+  color: 'paragraph',
+  isText: false,
+  textMap: {
+    light: 'Claro',
+    dark: 'Oscuro'
   }
 };
 var _default = ThemeSelector;

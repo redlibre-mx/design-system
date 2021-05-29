@@ -1,6 +1,6 @@
 /* @pareto-engineering/generator-front 1.0.12 */
 import * as React from 'react';
-import { useLayoutEffect, useCallback } from 'react';
+import { useMemo, useLayoutEffect, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import styleNames from '@redlibre/bem';
 import { useSite } from "../../a"; // Local Definitions
@@ -16,8 +16,11 @@ const ThemeSelector = ({
   className: userClassName,
   style,
   // children
+  color,
   themes,
-  iconMap
+  iconMap,
+  textMap,
+  isText
 }) => {
   const {
     userTheme,
@@ -26,19 +29,22 @@ const ThemeSelector = ({
   useLayoutEffect(() => {
     import("./styles.scss");
   }, []);
-  const loopThemes = useCallback(() => {
+  const nextTheme = useMemo(() => {
     const current = themes.indexOf(userTheme);
-    setPreferredTheme(themes[(current + 1) % themes.length]);
-  }, [userTheme]);
+    return themes[(current + 1) % themes.length];
+  }, [userTheme, themes]);
+  const loopThemes = useCallback(() => {
+    setPreferredTheme(nextTheme);
+  }, [userTheme, themes]);
   return /*#__PURE__*/React.createElement("button", {
     type: "button",
-    className: [baseClassName, componentClassName, userClassName].filter(e => e).join(' '),
+    className: [baseClassName, componentClassName, userClassName, `x-${color}`].filter(e => e).join(' '),
     id: id,
     style: style,
     onClick: loopThemes
   }, /*#__PURE__*/React.createElement("span", {
-    className: "v0 m-v icon"
-  }, iconMap[userTheme]));
+    className: ['v0 m-v', isText ? 'f-paragraph' : 'icon'].filter(Boolean).join(' ')
+  }, isText ? textMap[nextTheme] || nextTheme : iconMap[userTheme]));
 };
 
 ThemeSelector.propTypes = {
@@ -70,7 +76,22 @@ ThemeSelector.propTypes = {
   /**
    * A map of the theme names with the icons that represent them. Uses the default font icon.
    */
-  iconMap: PropTypes.objectOf(PropTypes.string)
+  iconMap: PropTypes.objectOf(PropTypes.string),
+
+  /**
+   * A map of the theme names with the text that represent them.
+   */
+  textMap: PropTypes.objectOf(PropTypes.string),
+
+  /**
+   * The color of the component.
+   */
+  color: PropTypes.string,
+
+  /**
+   * Whether to display text instead of icons
+   */
+  isText: PropTypes.bool
 };
 ThemeSelector.defaultProps = {
   themes: ['light', 'dark'],
@@ -79,6 +100,12 @@ ThemeSelector.defaultProps = {
     // sun,
     light: 'm' // moon,
 
+  },
+  color: 'paragraph',
+  isText: false,
+  textMap: {
+    light: 'Claro',
+    dark: 'Oscuro'
   }
 };
 export default ThemeSelector;

@@ -3,12 +3,14 @@
 @use "@redlibre/bem";
 
 $default-color:var(--x, var(--contrast));
+$default-padding:0;
 
 .#{bem.$base}.theme-selector {
   background: transparent;
   border: none;
   color: $default-color;
   cursor: pointer;
+  padding: $default-padding;
 }
 
 

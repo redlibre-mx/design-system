@@ -70,7 +70,11 @@ var Sidebar = _ref => {
   }, step.title)
   /* eslint-enable no-nested-ternary */
   ))), footer || true ? /*#__PURE__*/React.createElement("footer", null, footer, /*#__PURE__*/React.createElement(_b.ThemeSelector, {
-    className: "x-heading"
+    className: "x-heading",
+    isText: true,
+    textMap: {
+      dark: 'mysterious'
+    }
   })) : /*#__PURE__*/React.createElement("span", null));
 };
 

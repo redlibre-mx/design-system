@@ -50,7 +50,11 @@ const Sidebar = ({
   }, step.title)
   /* eslint-enable no-nested-ternary */
   ))), footer || true ? /*#__PURE__*/React.createElement("footer", null, footer, /*#__PURE__*/React.createElement(ThemeSelector, {
-    className: "x-heading"
+    className: "x-heading",
+    isText: true,
+    textMap: {
+      dark: 'mysterious'
+    }
   })) : /*#__PURE__*/React.createElement("span", null));
 };
 
