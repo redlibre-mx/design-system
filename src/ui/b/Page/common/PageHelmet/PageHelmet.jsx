@@ -19,7 +19,7 @@ const helmetMap = [
 
   {
     variables:['title_tag', 'title'],
-    render   :(v) => <title key="title_tag">{ v }</title>,
+    render   :(v, c) => <title key="title_tag">{ v }{ C.SITE?.TITLE_SUFFIX && ` ${C.SITE.TITLE_SUFFIX}`}</title>,
   },
 
   {
@@ -221,6 +221,10 @@ PageHelmet.propTypes = {
     PropTypes.object,
   ]),
   meta_description:PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object,
+  ]),
+  main_image:PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.object,
   ]),
