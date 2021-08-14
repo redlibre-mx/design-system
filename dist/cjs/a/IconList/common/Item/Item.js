@@ -11,6 +11,8 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _bem = _interopRequireDefault(require("@redlibre/bem"));
 
+var _excluded = ["id", "className", "style", "children", "icon", "iconHover"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
@@ -44,7 +46,7 @@ var Item = _ref => {
     icon,
     iconHover
   } = _ref,
-      otherProps = _objectWithoutProperties(_ref, ["id", "className", "style", "children", "icon", "iconHover"]);
+      otherProps = _objectWithoutProperties(_ref, _excluded);
 
   return /*#__PURE__*/React.createElement("li", _extends({
     id: id,

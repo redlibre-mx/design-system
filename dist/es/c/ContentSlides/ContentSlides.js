@@ -108,7 +108,7 @@ const ContentSlides = ({
   useLayoutEffect(() => {
     const requestedStepIndex = steps.findIndex(e => e.location === history.location.pathname);
 
-    if (requestedStepIndex !== currentStepIndex) {
+    if (requestedStepIndex >= 0 && requestedStepIndex !== currentStepIndex) {
       setCurrentStep(requestedStepIndex);
     }
   }, [history.location]);

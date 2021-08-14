@@ -13,6 +13,8 @@ var _bem = _interopRequireDefault(require("@redlibre/bem"));
 
 var _usePage = _interopRequireDefault(require("../../usePage"));
 
+var _excluded = ["id", "className", "style", "children"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
@@ -36,7 +38,7 @@ var Section = _ref => {
     style,
     children
   } = _ref,
-      otherProps = _objectWithoutProperties(_ref, ["id", "className", "style", "children"]);
+      otherProps = _objectWithoutProperties(_ref, _excluded);
 
   var {
     id: pageId
